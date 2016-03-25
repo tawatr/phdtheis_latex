@@ -12,6 +12,12 @@
 \RequirePackage[tableposition=top]{caption}
 \RequirePackage{ifthen}
 \RequirePackage{amsmath,amssymb}
+
+
+% Modified from Mike's and Puwis's class
+% Feb 2016
+
+
 % <puwis>
 %\RequirePackage[top=2.5cm,bottom=2.5cm,left=3.75cm,right=2.5cm]{geometry}
 \RequirePackage{indentfirst}
