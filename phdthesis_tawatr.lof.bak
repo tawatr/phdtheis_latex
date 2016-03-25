@@ -1,0 +1,49 @@
+%  \edef\TEST{chapter}\edef\TESTT{#1}\ifx\TEST\TESTT\vskip-0.24\baselineskip\else\vskip0.20\baselineskip\fi
+\let\CL\contentsline\def\contentsline#1#2#3{%
+  \edef\TEST{chapter}\edef\TESTT{#1}\ifx\TEST\TESTT \vskip-0.24\baselineskip\else \vskip0.08 \baselineskip\fi
+  \CL{#1}{#2}{#3}}% make line spacing 1.5 %
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+  \vskip 5\p@
+\contentsline {chapter}{\hspace{5mm}Figure}{Page \kern-6pt}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+\contentsline {figure}{\numberline {\normalsize2.1}{\ignorespaces\normalsize Summary of \citet {berdichevsky1980a}}}{14}
+\contentsline {figure}{\numberline {\normalsize2.2}{\ignorespaces\normalsize A model of galvanic distortion in this study}}{14}
+\contentsline {figure}{\numberline {\normalsize2.3}{\ignorespaces\normalsize Effect of twist, shear and anisotropy operators on a family of unity vectors}}{21}
+\contentsline {figure}{\numberline {\normalsize4.1}{\ignorespaces\normalsize Layered-earth model used in this study and corresponding response}}{35}
+\contentsline {figure}{\numberline {\normalsize4.2}{\ignorespaces\normalsize Distortion parameters and their distribution}}{36}
+\contentsline {figure}{\numberline {\normalsize4.3}{\ignorespaces\normalsize Example of distorted 1D MT data and corresponding invariant impedances}}{38}
+\contentsline {figure}{\numberline {\normalsize4.4}{\ignorespaces\normalsize Example of distorted det and ssq impedances from distorted 1D MT dataset}}{39}
+\contentsline {figure}{\numberline {\normalsize4.5}{\ignorespaces\normalsize Average det and ssq impedances from 1D MT datasets distorted with different galvanic distortion strengths}}{40}
+\contentsline {figure}{\numberline {\normalsize4.6}{\ignorespaces\normalsize Inverted models from average det and ssq impedances from distorted 1D datasets}}{41}
+\contentsline {figure}{\numberline {\normalsize4.7}{\ignorespaces\normalsize Checkerboard model and MT array setting used in this study}}{42}
+\contentsline {figure}{\numberline {\normalsize4.8}{\ignorespaces\normalsize Det and ssq impedances from MT array over the checkerboard model}}{43}
+\contentsline {figure}{\numberline {\normalsize4.9}{\ignorespaces\normalsize Examples of undistorted and distorted 3D MT data}}{44}
+\contentsline {figure}{\numberline {\normalsize4.10}{\ignorespaces\normalsize Det and ssq impedances derived from the undistorted and distored MT impedance}}{45}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\contentsline {chapter}{\begin{center} \vskip-20pt \large LIST OF FIGURES (cont.) \end{center}}{}%
+\vskip 5\p@
+\contentsline {chapter}{\hspace{5mm}Figure}{Page \kern-6pt}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\contentsline {figure}{\numberline {\normalsize4.11}{\ignorespaces\normalsize Example of distorted det and ssq impedances from distorted 3D MTdataset}}{46}
+\contentsline {figure}{\numberline {\normalsize4.12}{\ignorespaces\normalsize Average det and ssq impedances from 3D MT datasets distorted with different galvanic distortion strengths}}{47}
+\contentsline {figure}{\numberline {\normalsize4.13}{\ignorespaces\normalsize Inverted models from average det and ssq impedances from distorted 3D datasets}}{48}
+\contentsline {figure}{\numberline {\normalsize4.14}{\ignorespaces\normalsize MT array, in which its size is comparable to the anomaly size, located at different position}}{50}
+\contentsline {figure}{\numberline {\normalsize4.15}{\ignorespaces\normalsize Theoretical and estimated model of regional mean 1D profile from large MT arrays}}{51}
+\contentsline {figure}{\numberline {\normalsize4.16}{\ignorespaces\normalsize Same as Figure 4.15\hbox {} for small arrays}}{53}
+\contentsline {figure}{\numberline {\normalsize4.17}{\ignorespaces\normalsize Same as Figure 4.15\hbox {} for the settings shown in Figure 4.16\hbox {}.}}{53}
+\contentsline {figure}{\numberline {\normalsize4.18}{\ignorespaces\normalsize Local distortion indicators from 1D and 3D data}}{55}
+\contentsline {figure}{\numberline {\normalsize4.19}{\ignorespaces\normalsize Comparison of the actual and the mean local distortion indicators and percentage difference}}{57}
+\contentsline {figure}{\numberline {\normalsize4.20}{\ignorespaces\normalsize Same as Figure 4.19\hbox {} for the 3D example}}{58}
+\contentsline {figure}{\numberline {\normalsize4.21}{\ignorespaces\normalsize Regional distortion indicators from 1D and 3D data distorted with different galvanic distortion strengths}}{59}
+\contentsline {figure}{\numberline {\normalsize4.22}{\ignorespaces\normalsize Example of apparent gains from 1D and 3D data}}{60}
+\contentsline {figure}{\numberline {\normalsize4.23}{\ignorespaces\normalsize Apparent det and ssq gains from 3D dataset}}{61}
+\contentsline {figure}{\numberline {\normalsize4.24}{\ignorespaces\normalsize Comparison of the actual and the mean apparent gains from 1D dataset}}{63}
+\contentsline {figure}{\numberline {\normalsize4.25}{\ignorespaces\normalsize Same as Figure 4.24\hbox {} for the 3D example}}{64}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

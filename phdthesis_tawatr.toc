@@ -1,0 +1,29 @@
+\contentsline {chapter}{ACKNOWLEDGEMENTS}{iii}
+\contentsline {chapter}{ABSTRACT (ENGLISH)}{iv}
+\contentsline {chapter}{ABSTRACT (THAI)}{v}
+\contentsline {chapter}{\MakeTextUppercase {Contents}}{vi}
+\contentsline {chapter}{\MakeTextUppercase {List of Figures}}{viii}
+\contentsline {chapter}{CHAPTER {I}Introduction}{1}
+\contentsline {chapter}{CHAPTER {II}Theoretical Background}{8}
+\contentsline {section}{\numberline {2.1}Magnetotellurics}{8}
+\contentsline {section}{\numberline {2.2}Berdichevsky average}{12}
+\contentsline {section}{\numberline {2.3}Galvanic distortion}{13}
+\contentsline {subsection}{\numberline {2.3.1}Galvanic distortion principle}{15}
+\contentsline {subsection}{\numberline {2.3.2}Groom--Bailey's framework}{19}
+\contentsline {chapter}{CHAPTER {III}Proposed Methods}{23}
+\contentsline {section}{\numberline {3.1}Distorted invariant impedances}{23}
+\contentsline {subsection}{\numberline {3.1.1}Distorted det impedance}{23}
+\contentsline {subsection}{\numberline {3.1.2}Distorted ssq impedance}{25}
+\contentsline {section}{\numberline {3.2}Redefining the Berdichevsky average}{26}
+\contentsline {section}{\numberline {3.3}Indicating the galvanic distortion}{29}
+\contentsline {subsection}{\numberline {3.3.1}Local and regional distortion indicators}{29}
+\contentsline {subsection}{\numberline {3.3.2}Apparent gains}{31}
+\contentsline {chapter}{CHAPTER {IV}Synthetic Experiments and Discussion}{34}
+\contentsline {section}{\numberline {4.1}1D examples}{34}
+\contentsline {section}{\numberline {4.2}3D examples}{42}
+\contentsline {section}{\numberline {4.3}Examination of theoretical definition}{49}
+\contentsline {section}{\numberline {4.4}Local and regional distortion indicators}{54}
+\contentsline {section}{\numberline {4.5}Apparent gains}{60}
+\contentsline {chapter}{CHAPTER {V}Conclusions}{65}
+\contentsline {chapter}{\MakeUppercase {References}}{68}
+\contentsline {chapter}{BIOGRAPHY}{77}

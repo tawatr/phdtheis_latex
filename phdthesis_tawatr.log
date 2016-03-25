@@ -1,0 +1,1394 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  18 MAR 2016 10:53
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**phdthesis_tawatr.tex
+(./phdthesis_tawatr.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, galician, german, ngerman, swissgerman, monogreek, greek, hungarian,
+ icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, marathi, or
+iya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, kurmanji,
+ lao, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, pol
+ish, portuguese, romanian, russian, sanskrit, serbian, serbianc, slovak, sloven
+ian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded
+.
+(./muthesis_tawatr.cls
+
+LaTeX Warning: You have requested document class `muthesis_tawatr',
+               but the document class provides `muthesis'.
+
+Document Class: muthesis 2010/03/02 v0.525 Mahidol University thesis class
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./caption.sty
+Package: caption 2004/05/16 v3.0b Customising captions (AS)
+\captionmargin=\dimen103
+\captionwidth=\dimen104
+\captionindent=\dimen105
+\captionparindent=\dimen106
+\captionhangindent=\dimen107
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen108
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen109
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen110
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks16
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks17
+\eqnshift@=\dimen111
+\alignsep@=\dimen112
+\tagshift@=\dimen113
+\tagwidth@=\dimen114
+\totwidth@=\dimen115
+\lineht@=\dimen116
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count100
+\Gm@cntv=\count101
+\c@Gm@tempcnt=\count102
+\Gm@bindingoffset=\dimen117
+\Gm@wd@mp=\dimen118
+\Gm@odd@mp=\dimen119
+\Gm@even@mp=\dimen120
+\Gm@layoutwidth=\dimen121
+\Gm@layoutheight=\dimen122
+\Gm@layouthoffset=\dimen123
+\Gm@layoutvoffset=\dimen124
+\Gm@dimlist=\toks20
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2007/08/12 v2.8 Sectioning titles
+\ttl@box=\box28
+\beforetitleunit=\skip46
+\aftertitleunit=\skip47
+\ttl@plus=\dimen125
+\ttl@minus=\dimen126
+\ttl@toksa=\toks21
+\titlewidth=\dimen127
+\titlewidthlast=\dimen128
+\titlewidthfirst=\dimen129
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (./lineno.sty
+Package: lineno 2002/01/27 line numbers on paragraphs v3.08b
+\linenopenalty=\count103
+\output=\toks22
+\linenoprevgraf=\count104
+\linenumbersep=\dimen130
+\linenumberwidth=\dimen131
+\c@linenumber=\count105
+\c@pagewiselinenumber=\count106
+\c@linenumbermodulo=\count107
+\c@internallinenumber=\count108
+\c@internallinenumbers=\count109
+\quotelinenumbersep=\dimen132
+\bframerule=\dimen133
+\bframesep=\dimen134
+\bframebox=\box29
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip48
+\bibsep=\skip49
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count110
+)
+\refbaselineskip=\skip50
+\@halftextwidth=\skip51
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/titlesec/block.tss
+File: block.tss 2011/12/15
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count111
+))
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen137
+\extrarowheight=\dimen138
+\NC@list=\toks23
+\extratabsurround=\skip52
+\backup@length=\skip53
+)
+\TX@col@width=\dimen139
+\TX@old@table=\dimen140
+\TX@old@col=\dimen141
+\TX@target=\dimen142
+\TX@delta=\dimen143
+\TX@cols=\count112
+\TX@ftn=\toks24
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen144
+\lightrulewidth=\dimen145
+\cmidrulewidth=\dimen146
+\belowrulesep=\dimen147
+\belowbottomsep=\dimen148
+\aboverulesep=\dimen149
+\abovetopsep=\dimen150
+\cmidrulesep=\dimen151
+\cmidrulekern=\dimen152
+\defaultaddspace=\dimen153
+\@cmidla=\count113
+\@cmidlb=\count114
+\@aboverulesep=\dimen154
+\@belowrulesep=\dimen155
+\@thisruleclass=\count115
+\@lastruleclass=\count116
+\@thisrulewidth=\dimen156
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+\c@r@tfl@t=\count117
+\rotFPtop=\skip54
+\rotFPbot=\skip55
+\rot@float@box=\box30
+\rot@mess@toks=\toks25
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
+(/usr/local/texlive/2011/texmf-dist/tex/latex/esint/esint.sty
+Package: esint 
+\symlargesymbolsA=\mathgroup6
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count118
+\float@exts=\toks26
+\float@box=\box31
+\@float@everytoks=\toks27
+\@floatcapt=\box32
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip56
+\subfigcapskip=\skip57
+\subfigcaptopadj=\dimen157
+\subfigbottomskip=\skip58
+\subfigcapmargin=\dimen158
+\subfiglabelskip=\skip59
+\c@subfigure=\count119
+\c@lofdepth=\count120
+\c@subtable=\count121
+\c@lotdepth=\count122
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2011/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip60
+\subfig@bottom=\skip61
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks28
+\SOUL@lasttoken=\toks29
+\SOUL@cmds=\toks30
+\SOUL@buffer=\toks31
+\SOUL@token=\toks32
+\SOUL@spaceskip=\skip62
+\SOUL@ttwidth=\dimen159
+\SOUL@uldp=\dimen160
+\SOUL@ulht=\dimen161
+)
+(./phdthesis_tawatr.aux
+
+LaTeX Warning: Label `eq:global_model' multiply defined.
+
+
+LaTeX Warning: Label `fig:lyrearth_resp' multiply defined.
+
+)
+\openout1 = `phdthesis_tawatr.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+ (/usr/local/texlive/2011/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2009/05/30 v1.1 EverySelectfont Package (MS)
+LaTeX Info: Redefining \selectfont on input line 117.
+)
+\CenteringLeftskip=\skip63
+\RaggedLeftLeftskip=\skip64
+\RaggedRightLeftskip=\skip65
+\CenteringRightskip=\skip66
+\RaggedLeftRightskip=\skip67
+\RaggedRightRightskip=\skip68
+\CenteringParfillskip=\skip69
+\RaggedLeftParfillskip=\skip70
+\RaggedRightParfillskip=\skip71
+\JustifyingParfillskip=\skip72
+\CenteringParindent=\skip73
+\RaggedLeftParindent=\skip74
+\RaggedRightParindent=\skip75
+\JustifyingParindent=\skip76
+)
+Package caption Info: float package v1.2 (or newer) detected on input line 157.
+
+Package caption Info: rotating package v2.0 (or newer) detected on input line 1
+57.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=419.67815pt
+* \textheight=667.21712pt
+* \oddsidemargin=35.56593pt
+* \evensidemargin=0.0pt
+* \topmargin=0.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2011/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count123
+\scratchdimen=\dimen162
+\scratchbox=\box33
+\nofMPsegments=\count124
+\nofMParguments=\count125
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count126
+\MPscratchDim=\dimen163
+\MPnumerator=\count127
+\makeMPintoPDFobject=\count128
+\everyMPtoPDFconversion=\toks34
+) (/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Managing graphics extensions (HO)
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
+))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
+
+(/usr/local/texlive/2011/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for U+msa on input line 158.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 158.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+esint on input line 158.
+
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/esint/uesint.fd
+File: uesint.fd 
+) [1
+
+{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1] [2]
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+
+ []
+
+[3
+
+]
+Underfull \hbox (badness 7540) in paragraph at lines 175--175
+\OT1/cmr/m/n/12 ESTIMATING RE-GIONAL MEAN CON-DUC-TIV-ITY PRO-FILES AND
+ []
+
+
+Underfull \hbox (badness 6741) in paragraph at lines 175--175
+\OT1/cmr/m/n/12 DE-TECT-ING GAL-VANIC DIS-TOR-TION US-ING MAG-NE-TOTEL-LURIC
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 175--175
+\OT1/cmr/m/n/12 THESIS AD-VI-SORS : WEER-ACHAI SIRIPUN-VARA-PORN, Ph.D. (GEO-
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 175--175
+\OT1/cmr/m/n/12 Ph.D. (PHYSICS), CHAI-WOOT BOONYASIRI-WAT, Ph.D. (SCI-EN-TIFIC
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+
+ []
+
+[4]
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+
+ []
+
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no ž in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\utfont D. Sc. (GEO-PHYSICS), âšÃ‘Â¢âšÃ„Ã®Â¬Â¨Â¬Â´âˆšÃ¸âšÃ¢Â§âšÃ„Ã²
+ []
+
+
+Underfull \hbox (badness 4205) in paragraph at lines 180--180
+\utfont âšÃ Â´âˆšÃ¸âšÃ¢â âšÃ¢â Â¬ÂªâšÃ„Ã²âšÃ Ã¶âšÃ„Ã²Â¬Â´âšÃ„Ã®âšÃ¢Â§Å“Ã„âˆšÃ¨,
+ Ph.D. (PHYSICS),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+
+ []
+
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+Missing character: There is no € in font dbtt!
+[5] (./phdthesis_tawatr.toc [6
+
+])
+\tf@toc=\write4
+\openout4 = `phdthesis_tawatr.toc'.
+
+ [7] (./phdthesis_tawatr.lof [8
+
+])
+\tf@lof=\write5
+\openout5 = `phdthesis_tawatr.lof'.
+
+
+(./_content/newcommand_latex.tex) [9] (./_content/intro/intro.tex
+Chapter 1.
+
+Overfull \hbox (1.99164pt too wide) in paragraph at lines 33--44
+[]\OT1/cmr/m/n/12 From the his-tor-i-cal per-spec-tive, re-veal-ing the Earth's
+ con-duc-tiv-ity struc-
+ []
+
+[1
+
+
+] [2] [3] [4] [5] [6]) [7]
+(./_content/theoretical_background/theoretical_background.tex
+Chapter 2.
+(./_content/theoretical_background/theoretical_background_mt.tex [8
+
+
+] [9]
+[10] [11])
+(./_content/theoretical_background/theoretical_background_berdichevsky.tex
+Overfull \hbox (0.81967pt too wide) in paragraph at lines 5--5
+|\OT1/cmr/bx/n/14.4 2.2 Es-ti-mat-ing the model of re-gional mean con-duc-tiv-i
+ty pro-
+ []
+
+[12]
+<_content/theoretical_background/_fig/berdichevsky_result.pdf, id=84, 947.48468
+pt x 407.01993pt>
+File: _content/theoretical_background/_fig/berdichevsky_result.pdf Graphic file
+ (type pdf)
+
+<use _content/theoretical_background/_fig/berdichevsky_result.pdf>
+Package pdftex.def Info: _content/theoretical_background/_fig/berdichevsky_resu
+lt.pdf used on input line 32.
+(pdftex.def)             Requested size: 397.48499pt x 170.74846pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./_content/theoretical_background/theoretical_background_distortion.tex
+<_content/theoretical_background/_fig/galvanicdistortion_model.pdf, id=85, 895.
+345pt x 686.565pt>
+File: _content/theoretical_background/_fig/galvanicdistortion_model.pdf Graphic
+ file (type pdf)
+
+<use _content/theoretical_background/_fig/galvanicdistortion_model.pdf>
+Package pdftex.def Info: _content/theoretical_background/_fig/galvanicdistortio
+n_model.pdf used on input line 20.
+(pdftex.def)             Requested size: 361.34999pt x 277.09349pt.
+
+[13] [14 <./_content/theoretical_background/_fig/berdichevsky_result.pdf> <./_c
+ontent/theoretical_background/_fig/galvanicdistortion_model.pdf>] [15] [16]
+[17] [18] [19]
+<_content/theoretical_background/_fig/plot_uvec_crop.pdf, id=304, 358.33875pt x
+ 338.26375pt>
+File: _content/theoretical_background/_fig/plot_uvec_crop.pdf Graphic file (typ
+e pdf)
+ <use _content/theoretical_background/_fig/plot_uvec_crop.pdf>
+Package pdftex.def Info: _content/theoretical_background/_fig/plot_uvec_crop.pd
+f used on input line 213.
+(pdftex.def)             Requested size: 289.07999pt x 272.90305pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20] [21 <./_content/theoretical_background/_fig/plot_uvec_crop.pdf>]))
+[22] (./_content/reg1d_method/reg1d_method.tex
+Chapter 3.
+[23
+
+
+] [24] [25] [26] [27] [28] [29] [30] [31] [32]) [33]
+(./_content/reg1d_synthetic_1d/reg1d_synthetic_1d.tex
+Chapter 4.
+
+<_content/reg1d_synthetic_1d/_fig/model_lyr11a_cropped.pdf, id=356, 414.55879pt
+ x 597.03049pt>
+File: _content/reg1d_synthetic_1d/_fig/model_lyr11a_cropped.pdf Graphic file (t
+ype pdf)
+
+<use _content/reg1d_synthetic_1d/_fig/model_lyr11a_cropped.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_1d/_fig/model_lyr11a_cropped.
+pdf used on input line 30.
+(pdftex.def)             Requested size: 186.54973pt x 268.66122pt.
+
+<_content/reg1d_synthetic_1d/_fig/mesh-m01a-lyr11a_mt_arsphs_inv.pdf, id=357, 3
+41.43561pt x 597.51233pt>
+File: _content/reg1d_synthetic_1d/_fig/mesh-m01a-lyr11a_mt_arsphs_inv.pdf Graph
+ic file (type pdf)
+
+<use _content/reg1d_synthetic_1d/_fig/mesh-m01a-lyr11a_mt_arsphs_inv.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_1d/_fig/mesh-m01a-lyr11a_mt_a
+rsphs_inv.pdf used on input line 33.
+(pdftex.def)             Requested size: 153.64459pt x 268.87805pt.
+
+[34
+
+
+]
+<_content/reg1d_synthetic_1d/_fig/gtes.pdf, id=361, 517.935pt x 894.34125pt>
+File: _content/reg1d_synthetic_1d/_fig/gtes.pdf Graphic file (type pdf)
+
+<use _content/reg1d_synthetic_1d/_fig/gtes.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_1d/_fig/gtes.pdf used on inpu
+t line 54.
+(pdftex.def)             Requested size: 155.38168pt x 268.30444pt.
+
+<_content/reg1d_synthetic_1d/_fig/gtes_hist2.pdf, id=362, 584.1825pt x 905.3825
+pt>
+File: _content/reg1d_synthetic_1d/_fig/gtes_hist2.pdf Graphic file (type pdf)
+ <use _content/reg1d_synthetic_1d/_fig/gtes_hist2.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_1d/_fig/gtes_hist2.pdf used o
+n input line 57.
+(pdftex.def)             Requested size: 175.25609pt x 271.61684pt.
+ [35 <./_content/reg1d_synthetic_1d/_fig/model_lyr11a_cropped.pdf> <./_content/
+reg1d_synthetic_1d/_fig/mesh-m01a-lyr11a_mt_arsphs_inv.pdf>] [36 <./_content/re
+g1d_synthetic_1d/_fig/gtes.pdf> <./_content/reg1d_synthetic_1d/_fig/gtes_hist2.
+pdf>]
+<_content/reg1d_synthetic_1d/_fig/lyr11a_syn0203_mt_arsphs.pdf, id=409, 341.435
+61pt x 597.51233pt>
+File: _content/reg1d_synthetic_1d/_fig/lyr11a_syn0203_mt_arsphs.pdf Graphic fil
+e (type pdf)
+
+<use _content/reg1d_synthetic_1d/_fig/lyr11a_syn0203_mt_arsphs.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_1d/_fig/lyr11a_syn0203_mt_ars
+phs.pdf used on input line 106.
+(pdftex.def)             Requested size: 153.64459pt x 268.87805pt.
+
+<_content/reg1d_synthetic_1d/_fig/lyr11a_syn0203_zinv.pdf, id=410, 341.43561pt 
+x 597.51233pt>
+File: _content/reg1d_synthetic_1d/_fig/lyr11a_syn0203_zinv.pdf Graphic file (ty
+pe pdf)
+ <use _content/reg1d_synthetic_1d/_fig/lyr11a_syn0203_zinv.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_1d/_fig/lyr11a_syn0203_zinv.p
+df used on input line 110.
+(pdftex.def)             Requested size: 153.64459pt x 268.87805pt.
+
+<_content/reg1d_synthetic_1d/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_zinv_det_
+arsphs.pdf, id=411, 341.43561pt x 597.51233pt>
+File: _content/reg1d_synthetic_1d/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_zinv
+_det_arsphs.pdf Graphic file (type pdf)
+
+<use _content/reg1d_synthetic_1d/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_zinv_
+det_arsphs.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_1d/_fig/lyr11a_n25_d13a_disto
+rted-sd3a-gtes_zinv_det_arsphs.pdf used on input line 121.
+(pdftex.def)             Requested size: 153.64459pt x 268.87805pt.
+
+<_content/reg1d_synthetic_1d/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_zinv_ssq_
+arsphs.pdf, id=412, 341.43561pt x 597.51233pt>
+File: _content/reg1d_synthetic_1d/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_zinv
+_ssq_arsphs.pdf Graphic file (type pdf)
+
+<use _content/reg1d_synthetic_1d/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_zinv_
+ssq_arsphs.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_1d/_fig/lyr11a_n25_d13a_disto
+rted-sd3a-gtes_zinv_ssq_arsphs.pdf used on input line 125.
+(pdftex.def)             Requested size: 153.64459pt x 268.87805pt.
+
+<_content/reg1d_synthetic_1d/_fig/lyr11a_d13a_distorted-sdxa_mt_det.pdf, id=413
+, 341.43561pt x 597.51233pt>
+File: _content/reg1d_synthetic_1d/_fig/lyr11a_d13a_distorted-sdxa_mt_det.pdf Gr
+aphic file (type pdf)
+
+<use _content/reg1d_synthetic_1d/_fig/lyr11a_d13a_distorted-sdxa_mt_det.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_1d/_fig/lyr11a_d13a_distorted
+-sdxa_mt_det.pdf used on input line 135.
+(pdftex.def)             Requested size: 153.64459pt x 268.87805pt.
+
+<_content/reg1d_synthetic_1d/_fig/lyr11a_d13a_distorted-sdxa_mt_ssq.pdf, id=414
+, 341.43561pt x 597.51233pt>
+File: _content/reg1d_synthetic_1d/_fig/lyr11a_d13a_distorted-sdxa_mt_ssq.pdf Gr
+aphic file (type pdf)
+
+<use _content/reg1d_synthetic_1d/_fig/lyr11a_d13a_distorted-sdxa_mt_ssq.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_1d/_fig/lyr11a_d13a_distorted
+-sdxa_mt_ssq.pdf used on input line 140.
+(pdftex.def)             Requested size: 153.64459pt x 268.87805pt.
+
+<_content/reg1d_synthetic_1d/_fig/lyr11a_n25_d13a_distorted-sdxa_site_dispse_de
+t_inv1d.pdf, id=415, 414.55879pt x 597.03049pt>
+File: _content/reg1d_synthetic_1d/_fig/lyr11a_n25_d13a_distorted-sdxa_site_disp
+se_det_inv1d.pdf Graphic file (type pdf)
+
+<use _content/reg1d_synthetic_1d/_fig/lyr11a_n25_d13a_distorted-sdxa_site_disps
+e_det_inv1d.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_1d/_fig/lyr11a_n25_d13a_disto
+rted-sdxa_site_dispse_det_inv1d.pdf used on input line 181.
+(pdftex.def)             Requested size: 186.54973pt x 268.66122pt.
+
+<_content/reg1d_synthetic_1d/_fig/lyr11a_n25_d13a_distorted-sdxa_site_dispse_ss
+q_inv1d.pdf, id=416, 414.55879pt x 597.03049pt>
+File: _content/reg1d_synthetic_1d/_fig/lyr11a_n25_d13a_distorted-sdxa_site_disp
+se_ssq_inv1d.pdf Graphic file (type pdf)
+
+<use _content/reg1d_synthetic_1d/_fig/lyr11a_n25_d13a_distorted-sdxa_site_disps
+e_ssq_inv1d.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_1d/_fig/lyr11a_n25_d13a_disto
+rted-sdxa_site_dispse_ssq_inv1d.pdf used on input line 185.
+(pdftex.def)             Requested size: 186.54973pt x 268.66122pt.
+) [37] [38 <./_content/reg1d_synthetic_1d/_fig/lyr11a_syn0203_mt_arsphs.pdf> <.
+/_content/reg1d_synthetic_1d/_fig/lyr11a_syn0203_zinv.pdf>]
+[39 <./_content/reg1d_synthetic_1d/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_zin
+v_det_arsphs.pdf> <./_content/reg1d_synthetic_1d/_fig/lyr11a_n25_d13a_distorted
+-sd3a-gtes_zinv_ssq_arsphs.pdf>] [40 <./_content/reg1d_synthetic_1d/_fig/lyr11a
+_d13a_distorted-sdxa_mt_det.pdf> <./_content/reg1d_synthetic_1d/_fig/lyr11a_d13
+a_distorted-sdxa_mt_ssq.pdf>] [41 <./_content/reg1d_synthetic_1d/_fig/lyr11a_n2
+5_d13a_distorted-sdxa_site_dispse_det_inv1d.pdf> <./_content/reg1d_synthetic_1d
+/_fig/lyr11a_n25_d13a_distorted-sdxa_site_dispse_ssq_inv1d.pdf>]
+(./_content/reg1d_synthetic_3d/reg1d_synthetic_3d.tex
+<_content/reg1d_synthetic_3d/_fig/m02a_chkboard12_h0a2a_s40k_p0p0_pp1.pdf, id=6
+60, 520.94624pt x 505.89pt>
+File: _content/reg1d_synthetic_3d/_fig/m02a_chkboard12_h0a2a_s40k_p0p0_pp1.pdf 
+Graphic file (type pdf)
+
+<use _content/reg1d_synthetic_3d/_fig/m02a_chkboard12_h0a2a_s40k_p0p0_pp1.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_3d/_fig/m02a_chkboard12_h0a2a
+_s40k_p0p0_pp1.pdf used on input line 12.
+(pdftex.def)             Requested size: 231.26378pt x 224.57613pt.
+
+[42
+
+ <./_content/reg1d_synthetic_3d/_fig/m02a_chkboard12_h0a2a_s40k_p0p0_pp1.pdf>]
+<_content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb
+1X_loc-regi0_c-s40k-p0p0-pp1_d13a_undistorted_zinv_det_arsphs.pdf, id=672, 341.
+43561pt x 597.51233pt>
+File: _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n
+42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_undistorted_zinv_det_arsphs.pdf Graphic 
+file (type pdf)
+
+<use _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n4
+2_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_undistorted_zinv_det_arsphs.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2
+a-d05a-t01a_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_undistorted_zinv_det_
+arsphs.pdf used on input line 38.
+(pdftex.def)             Requested size: 153.64459pt x 268.87805pt.
+
+<_content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb
+1X_loc-regi0_c-s40k-p0p0-pp1_d13a_undistorted_zinv_ssq_arsphs.pdf, id=673, 341.
+43561pt x 597.51233pt>
+File: _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n
+42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_undistorted_zinv_ssq_arsphs.pdf Graphic 
+file (type pdf)
+
+<use _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n4
+2_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_undistorted_zinv_ssq_arsphs.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2
+a-d05a-t01a_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_undistorted_zinv_ssq_
+arsphs.pdf used on input line 42.
+(pdftex.def)             Requested size: 153.64459pt x 268.87805pt.
+ [43 <./_content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e4
+3n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_undistorted_zinv_det_arsphs.pdf> <./_c
+ontent/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_
+loc-regi0_c-s40k-p0p0-pp1_d13a_undistorted_zinv_ssq_arsphs.pdf>]
+<_content/reg1d_synthetic_3d/_fig/syni0203-azm000_zij_arsphs_undistorted.pdf, i
+d=685, 341.43561pt x 597.51233pt>
+File: _content/reg1d_synthetic_3d/_fig/syni0203-azm000_zij_arsphs_undistorted.p
+df Graphic file (type pdf)
+
+<use _content/reg1d_synthetic_3d/_fig/syni0203-azm000_zij_arsphs_undistorted.pd
+f>
+Package pdftex.def Info: _content/reg1d_synthetic_3d/_fig/syni0203-azm000_zij_a
+rsphs_undistorted.pdf used on input line 71.
+(pdftex.def)             Requested size: 153.64459pt x 268.87805pt.
+
+<_content/reg1d_synthetic_3d/_fig/syni0203-azm000_zij_arsphs_distorted.pdf, id=
+686, 341.43561pt x 597.51233pt>
+File: _content/reg1d_synthetic_3d/_fig/syni0203-azm000_zij_arsphs_distorted.pdf
+ Graphic file (type pdf)
+
+<use _content/reg1d_synthetic_3d/_fig/syni0203-azm000_zij_arsphs_distorted.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_3d/_fig/syni0203-azm000_zij_a
+rsphs_distorted.pdf used on input line 75.
+(pdftex.def)             Requested size: 153.64459pt x 268.87805pt.
+[44 <./_content/reg1d_synthetic_3d/_fig/syni0203-azm000_zij_arsphs_undistorted.
+pdf> <./_content/reg1d_synthetic_3d/_fig/syni0203-azm000_zij_arsphs_distorted.p
+df>]
+<_content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb
+1X_loc-regi0_c-s40k-p0p0-pp1_d13a_syni0203_zinv_arsphs.pdf, id=756, 341.43561pt
+ x 597.51233pt>
+File: _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n
+42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_syni0203_zinv_arsphs.pdf Graphic file (t
+ype pdf)
+
+<use _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n4
+2_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_syni0203_zinv_arsphs.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2
+a-d05a-t01a_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_syni0203_zinv_arsphs.
+pdf used on input line 95.
+(pdftex.def)             Requested size: 153.64459pt x 268.87805pt.
+
+<_content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb
+1X_loc-regi0_c-s40k-p0p0-pp1_d13a_syni0203_zinvdiff_arsphs.pdf, id=757, 341.435
+61pt x 597.51233pt>
+File: _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n
+42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_syni0203_zinvdiff_arsphs.pdf Graphic fil
+e (type pdf)
+
+<use _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n4
+2_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_syni0203_zinvdiff_arsphs.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2
+a-d05a-t01a_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_syni0203_zinvdiff_ars
+phs.pdf used on input line 99.
+(pdftex.def)             Requested size: 153.64459pt x 268.87805pt.
+ [45 <./_content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e4
+3n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_syni0203_zinv_arsphs.pdf> <./_content/
+reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-reg
+i0_c-s40k-p0p0-pp1_d13a_syni0203_zinvdiff_arsphs.pdf>]
+<_content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb
+1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_zinv_det_arsphs.pdf, id=7
+96, 341.43561pt x 597.51233pt>
+File: _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n
+42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_zinv_det_arsphs.pdf 
+Graphic file (type pdf)
+
+<use _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n4
+2_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_zinv_det_arsphs.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2
+a-d05a-t01a_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_z
+inv_det_arsphs.pdf used on input line 138.
+(pdftex.def)             Requested size: 153.64459pt x 268.87805pt.
+
+<_content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb
+1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_zinv_ssq_arsphs.pdf, id=7
+97, 341.43561pt x 597.51233pt>
+File: _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n
+42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_zinv_ssq_arsphs.pdf 
+Graphic file (type pdf)
+
+<use _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n4
+2_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_zinv_ssq_arsphs.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2
+a-d05a-t01a_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_z
+inv_ssq_arsphs.pdf used on input line 142.
+(pdftex.def)             Requested size: 153.64459pt x 268.87805pt.
+
+<_content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb
+1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_site_dispsd_zinv_det_arsphs.pd
+f, id=798, 341.43561pt x 597.51233pt>
+File: _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n
+42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_site_dispsd_zinv_det_arsp
+hs.pdf Graphic file (type pdf)
+
+<use _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n4
+2_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_site_dispsd_zinv_det_arsph
+s.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2
+a-d05a-t01a_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_site_d
+ispsd_zinv_det_arsphs.pdf used on input line 153.
+(pdftex.def)             Requested size: 153.64459pt x 268.87805pt.
+
+<_content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb
+1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_site_dispsd_zinv_ssq_arsphs.pd
+f, id=799, 341.43561pt x 597.51233pt>
+File: _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n
+42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_site_dispsd_zinv_ssq_arsp
+hs.pdf Graphic file (type pdf)
+
+<use _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n4
+2_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_site_dispsd_zinv_ssq_arsph
+s.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2
+a-d05a-t01a_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_site_d
+ispsd_zinv_ssq_arsphs.pdf used on input line 158.
+(pdftex.def)             Requested size: 153.64459pt x 268.87805pt.
+
+<_content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb
+1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_site_dispse_det.pdf, id=800, 4
+14.55879pt x 597.03049pt>
+File: _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n
+42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_site_dispse_det.pdf Graph
+ic file (type pdf)
+
+<use _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n4
+2_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_site_dispse_det.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2
+a-d05a-t01a_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_site_d
+ispse_det.pdf used on input line 170.
+(pdftex.def)             Requested size: 186.54973pt x 268.66122pt.
+
+<_content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb
+1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_site_dispse_ssq.pdf, id=801, 4
+14.55879pt x 597.03049pt>
+File: _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n
+42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_site_dispse_ssq.pdf Graph
+ic file (type pdf)
+
+<use _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n4
+2_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_site_dispse_ssq.pdf>
+Package pdftex.def Info: _content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2
+a-d05a-t01a_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_site_d
+ispse_ssq.pdf used on input line 174.
+(pdftex.def)             Requested size: 186.54973pt x 268.66122pt.
+)
+[46 <./_content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43
+n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_zinv_det_arsphs.pdf
+> <./_content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n4
+2_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_zinv_ssq_arsphs.pdf>]
+[47 <./_content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43
+n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_site_dispsd_zinv_det_ars
+phs.pdf> <./_content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_d
+r-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_site_dispsd_zinv_ss
+q_arsphs.pdf>] [48 <./_content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d
+05a-t01a_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_site_disp
+se_det.pdf> <./_content/reg1d_synthetic_3d/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01
+a_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_site_dispse_ssq.
+pdf>] (./_content/reg1d_exam/reg1d_exam.tex
+<_content/reg1d_exam/_fig/m02a_chkboard12_h0a2a_s40k_pxpx_pp1.pdf, id=940, 549.
+05125pt x 533.995pt>
+File: _content/reg1d_exam/_fig/m02a_chkboard12_h0a2a_s40k_pxpx_pp1.pdf Graphic 
+file (type pdf)
+
+<use _content/reg1d_exam/_fig/m02a_chkboard12_h0a2a_s40k_pxpx_pp1.pdf>
+Package pdftex.def Info: _content/reg1d_exam/_fig/m02a_chkboard12_h0a2a_s40k_px
+px_pp1.pdf used on input line 34.
+(pdftex.def)             Requested size: 231.26378pt x 224.92007pt.
+
+<_content/reg1d_exam/_fig/m02a_lyr11a_chkboard12-h0a2a-d05a-t01a_chkboard1X_s40
+k_pxpx_pp1_d13a_ssq_r2.pdf, id=941, 414.55879pt x 597.03049pt>
+File: _content/reg1d_exam/_fig/m02a_lyr11a_chkboard12-h0a2a-d05a-t01a_chkboard1
+X_s40k_pxpx_pp1_d13a_ssq_r2.pdf Graphic file (type pdf)
+
+<use _content/reg1d_exam/_fig/m02a_lyr11a_chkboard12-h0a2a-d05a-t01a_chkboard1X
+_s40k_pxpx_pp1_d13a_ssq_r2.pdf>
+Package pdftex.def Info: _content/reg1d_exam/_fig/m02a_lyr11a_chkboard12-h0a2a-
+d05a-t01a_chkboard1X_s40k_pxpx_pp1_d13a_ssq_r2.pdf used on input line 44.
+(pdftex.def)             Requested size: 186.54973pt x 268.66122pt.
+
+<_content/reg1d_exam/_fig/m02a_lyr11a_chkboard12-h0a2a-d05a-t01a_chkboard1X_s40
+k_pxpx_pp1_d13a_ssq_arsphs.pdf, id=942, 341.43561pt x 597.51233pt>
+File: _content/reg1d_exam/_fig/m02a_lyr11a_chkboard12-h0a2a-d05a-t01a_chkboard1
+X_s40k_pxpx_pp1_d13a_ssq_arsphs.pdf Graphic file (type pdf)
+
+<use _content/reg1d_exam/_fig/m02a_lyr11a_chkboard12-h0a2a-d05a-t01a_chkboard1X
+_s40k_pxpx_pp1_d13a_ssq_arsphs.pdf>
+Package pdftex.def Info: _content/reg1d_exam/_fig/m02a_lyr11a_chkboard12-h0a2a-
+d05a-t01a_chkboard1X_s40k_pxpx_pp1_d13a_ssq_arsphs.pdf used on input line 48.
+(pdftex.def)             Requested size: 153.64459pt x 268.87805pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[49
+
+] [50 <./_content/reg1d_exam/_fig/m02a_chkboard12_h0a2a_s40k_pxpx_pp1.pdf>]
+[51 <./_content/reg1d_exam/_fig/m02a_lyr11a_chkboard12-h0a2a-d05a-t01a_chkboard
+1X_s40k_pxpx_pp1_d13a_ssq_r2.pdf> <./_content/reg1d_exam/_fig/m02a_lyr11a_chkbo
+ard12-h0a2a-d05a-t01a_chkboard1X_s40k_pxpx_pp1_d13a_ssq_arsphs.pdf>]
+<_content/reg1d_exam/_fig/m02a_chkboard12_h0a2a_s40k_pxpx_pp0.pdf, id=1050, 549
+.05125pt x 533.995pt>
+File: _content/reg1d_exam/_fig/m02a_chkboard12_h0a2a_s40k_pxpx_pp0.pdf Graphic 
+file (type pdf)
+
+<use _content/reg1d_exam/_fig/m02a_chkboard12_h0a2a_s40k_pxpx_pp0.pdf>
+Package pdftex.def Info: _content/reg1d_exam/_fig/m02a_chkboard12_h0a2a_s40k_px
+px_pp0.pdf used on input line 138.
+(pdftex.def)             Requested size: 231.26378pt x 224.92007pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<_content/reg1d_exam/_fig/m02a_lyr11a_chkboard12-h0a2a-d05a-t01a_chkboard1X_s40
+k_pxpx_pp0_d13a_ssq_r2.pdf, id=1051, 414.55879pt x 597.03049pt>
+File: _content/reg1d_exam/_fig/m02a_lyr11a_chkboard12-h0a2a-d05a-t01a_chkboard1
+X_s40k_pxpx_pp0_d13a_ssq_r2.pdf Graphic file (type pdf)
+
+<use _content/reg1d_exam/_fig/m02a_lyr11a_chkboard12-h0a2a-d05a-t01a_chkboard1X
+_s40k_pxpx_pp0_d13a_ssq_r2.pdf>
+Package pdftex.def Info: _content/reg1d_exam/_fig/m02a_lyr11a_chkboard12-h0a2a-
+d05a-t01a_chkboard1X_s40k_pxpx_pp0_d13a_ssq_r2.pdf used on input line 149.
+(pdftex.def)             Requested size: 186.54973pt x 268.66122pt.
+
+<_content/reg1d_exam/_fig/m02a_lyr11a_chkboard12-h0a2a-d05a-t01a_chkboard1X_s40
+k_pxpx_pp0_d13a_ssq_arsphs.pdf, id=1052, 341.43561pt x 597.51233pt>
+File: _content/reg1d_exam/_fig/m02a_lyr11a_chkboard12-h0a2a-d05a-t01a_chkboard1
+X_s40k_pxpx_pp0_d13a_ssq_arsphs.pdf Graphic file (type pdf)
+
+<use _content/reg1d_exam/_fig/m02a_lyr11a_chkboard12-h0a2a-d05a-t01a_chkboard1X
+_s40k_pxpx_pp0_d13a_ssq_arsphs.pdf>
+Package pdftex.def Info: _content/reg1d_exam/_fig/m02a_lyr11a_chkboard12-h0a2a-
+d05a-t01a_chkboard1X_s40k_pxpx_pp0_d13a_ssq_arsphs.pdf used on input line 153.
+(pdftex.def)             Requested size: 153.64459pt x 268.87805pt.
+) [52] [53 <./_content/reg1d_exam/_fig/m02a_chkboard12_h0a2a_s40k_pxpx_pp0.pdf>
+ <./_content/reg1d_exam/_fig/m02a_lyr11a_chkboard12-h0a2a-d05a-t01a_chkboard1X_
+s40k_pxpx_pp0_d13a_ssq_r2.pdf> <./_content/reg1d_exam/_fig/m02a_lyr11a_chkboard
+12-h0a2a-d05a-t01a_chkboard1X_s40k_pxpx_pp0_d13a_ssq_arsphs.pdf>] (./_content/g
+amma/gamma.tex [54
+
+]
+<_content/gamma/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_gamma_magphs_merged.pd
+f, id=1135, 341.43561pt x 562.49147pt>
+File: _content/gamma/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_gamma_magphs_merg
+ed.pdf Graphic file (type pdf)
+
+<use _content/gamma/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_gamma_magphs_merge
+d.pdf>
+Package pdftex.def Info: _content/gamma/_fig/lyr11a_n25_d13a_distorted-sd3a-gte
+s_gamma_magphs_merged.pdf used on input line 42.
+(pdftex.def)             Requested size: 153.64459pt x 253.11882pt.
+
+<_content/gamma/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-regi0_
+c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gamma_magphs_merged.pdf, id=1136, 341.
+43561pt x 562.49147pt>
+File: _content/gamma/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-r
+egi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gamma_magphs_merged.pdf Graphic f
+ile (type pdf)
+
+<use _content/gamma/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-re
+gi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gamma_magphs_merged.pdf>
+Package pdftex.def Info: _content/gamma/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_d
+r-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gamma_magphs_m
+erged.pdf used on input line 46.
+(pdftex.def)             Requested size: 153.64459pt x 253.11882pt.
+ [55 <./_content/gamma/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_gamma_magphs_me
+rged.pdf> <./_content/gamma/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1
+X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gamma_magphs_merged.pdf>]
+<_content/gamma/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_gamma_est.pdf, id=1241
+, 455.24078pt x 213.39726pt>
+File: _content/gamma/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_gamma_est.pdf Gra
+phic file (type pdf)
+
+<use _content/gamma/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_gamma_est.pdf>
+Package pdftex.def Info: _content/gamma/_fig/lyr11a_n25_d13a_distorted-sd3a-gte
+s_gamma_est.pdf used on input line 83.
+(pdftex.def)             Requested size: 204.85646pt x 96.02786pt.
+
+<_content/gamma/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_gammapdiff.pdf, id=124
+2, 455.24078pt x 213.39726pt>
+File: _content/gamma/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_gammapdiff.pdf Gr
+aphic file (type pdf)
+
+<use _content/gamma/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_gammapdiff.pdf>
+Package pdftex.def Info: _content/gamma/_fig/lyr11a_n25_d13a_distorted-sd3a-gte
+s_gammapdiff.pdf used on input line 87.
+(pdftex.def)             Requested size: 204.85646pt x 96.02786pt.
+
+<_content/gamma/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-regi0_
+c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gamma_est_esd.pdf, id=1243, 455.24078p
+t x 213.39726pt>
+File: _content/gamma/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-r
+egi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gamma_est_esd.pdf Graphic file (t
+ype pdf)
+
+<use _content/gamma/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-re
+gi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gamma_est_esd.pdf>
+Package pdftex.def Info: _content/gamma/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_d
+r-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gamma_est_esd.
+pdf used on input line 97.
+(pdftex.def)             Requested size: 204.85646pt x 96.02786pt.
+
+<_content/gamma/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-regi0_
+c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gammapdiff_esd.pdf, id=1244, 455.24078
+pt x 213.39726pt>
+File: _content/gamma/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-r
+egi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gammapdiff_esd.pdf Graphic file (
+type pdf)
+
+<use _content/gamma/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-re
+gi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gammapdiff_esd.pdf>
+Package pdftex.def Info: _content/gamma/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_d
+r-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gammapdiff_esd
+.pdf used on input line 101.
+(pdftex.def)             Requested size: 204.85646pt x 96.02786pt.
+ [56]
+<_content/gamma/_fig/lyr11a_n25_d13a_distorted-sdxa_site_dispsd_gamma_magphs.pd
+f, id=1248, 341.43561pt x 562.49147pt>
+File: _content/gamma/_fig/lyr11a_n25_d13a_distorted-sdxa_site_dispsd_gamma_magp
+hs.pdf Graphic file (type pdf)
+
+<use _content/gamma/_fig/lyr11a_n25_d13a_distorted-sdxa_site_dispsd_gamma_magph
+s.pdf>
+Package pdftex.def Info: _content/gamma/_fig/lyr11a_n25_d13a_distorted-sdxa_sit
+e_dispsd_gamma_magphs.pdf used on input line 131.
+(pdftex.def)             Requested size: 153.64459pt x 253.11882pt.
+
+<_content/gamma/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-regi0_
+c-s40k-p0p0-pp1_d13a_distorted-sdxa_gamma_magphs.pdf, id=1249, 341.43561pt x 56
+2.49147pt>
+File: _content/gamma/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-r
+egi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_gamma_magphs.pdf Graphic file (type pd
+f)
+
+<use _content/gamma/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-re
+gi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_gamma_magphs.pdf>
+Package pdftex.def Info: _content/gamma/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_d
+r-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sdxa_gamma_magphs.pdf us
+ed on input line 135.
+(pdftex.def)             Requested size: 153.64459pt x 253.11882pt.
+ [57 <./_content/gamma/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_gamma_est.pdf> 
+<./_content/gamma/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_gammapdiff.pdf>]) [5
+8 <./_content/gamma/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-re
+gi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gamma_est_esd.pdf> <./_content/gam
+ma/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0-p
+p1_d13a_distorted-sd3a-gtes_gammapdiff_esd.pdf>] [59 <./_content/gamma/_fig/lyr
+11a_n25_d13a_distorted-sdxa_site_dispsd_gamma_magphs.pdf> <./_content/gamma/_fi
+g/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13
+a_distorted-sdxa_gamma_magphs.pdf>] (./_content/appgain/appgain.tex
+<_content/appgain/_fig/lyr11a_d10a_syn0203_gaina_magphs.pdf, id=1374, 341.43561
+pt x 562.49147pt>
+File: _content/appgain/_fig/lyr11a_d10a_syn0203_gaina_magphs.pdf Graphic file (
+type pdf)
+
+<use _content/appgain/_fig/lyr11a_d10a_syn0203_gaina_magphs.pdf>
+Package pdftex.def Info: _content/appgain/_fig/lyr11a_d10a_syn0203_gaina_magphs
+.pdf used on input line 19.
+(pdftex.def)             Requested size: 153.64459pt x 253.11882pt.
+
+<_content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-regi
+0_c-s40k-p0p0-pp1_d13a_syni0203_gaina_magphs.pdf, id=1375, 341.43561pt x 562.49
+147pt>
+File: _content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc
+-regi0_c-s40k-p0p0-pp1_d13a_syni0203_gaina_magphs.pdf Graphic file (type pdf)
+
+<use _content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-
+regi0_c-s40k-p0p0-pp1_d13a_syni0203_gaina_magphs.pdf>
+Package pdftex.def Info: _content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a
+_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_syni0203_gaina_magphs.pdf used o
+n input line 23.
+(pdftex.def)             Requested size: 153.64459pt x 253.11882pt.
+ [60
+
+ <./_content/appgain/_fig/lyr11a_d10a_syn0203_gaina_magphs.pdf> <./_content/app
+gain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0
+-pp1_d13a_syni0203_gaina_magphs.pdf>]
+<_content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-regi
+0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gdet_magphs.pdf, id=1443, 341.43561p
+t x 562.49147pt>
+File: _content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc
+-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gdet_magphs.pdf Graphic file (t
+ype pdf)
+
+<use _content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-
+regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gdet_magphs.pdf>
+Package pdftex.def Info: _content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a
+_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gdet_magphs.
+pdf used on input line 58.
+(pdftex.def)             Requested size: 153.64459pt x 253.11882pt.
+
+<_content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-regi
+0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gssq_magphs.pdf, id=1444, 341.43561p
+t x 562.49147pt>
+File: _content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc
+-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gssq_magphs.pdf Graphic file (t
+ype pdf)
+
+<use _content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-
+regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gssq_magphs.pdf>
+Package pdftex.def Info: _content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a
+_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gssq_magphs.
+pdf used on input line 62.
+(pdftex.def)             Requested size: 153.64459pt x 253.11882pt.
+ [61 <./_content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_l
+oc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gdet_magphs.pdf> <./_content/
+appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-regi0_c-s40k-p
+0p0-pp1_d13a_distorted-sd3a-gtes_gssq_magphs.pdf>] [62]
+<_content/appgain/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_gaina_est.pdf, id=14
+60, 455.24078pt x 213.39726pt>
+File: _content/appgain/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_gaina_est.pdf G
+raphic file (type pdf)
+
+<use _content/appgain/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_gaina_est.pdf>
+Package pdftex.def Info: _content/appgain/_fig/lyr11a_n25_d13a_distorted-sd3a-g
+tes_gaina_est.pdf used on input line 121.
+(pdftex.def)             Requested size: 204.85646pt x 96.02786pt.
+
+<_content/appgain/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_gaina_est_diffp.pdf,
+ id=1461, 455.24078pt x 213.39726pt>
+File: _content/appgain/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_gaina_est_diffp
+.pdf Graphic file (type pdf)
+
+<use _content/appgain/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_gaina_est_diffp.
+pdf>
+Package pdftex.def Info: _content/appgain/_fig/lyr11a_n25_d13a_distorted-sd3a-g
+tes_gaina_est_diffp.pdf used on input line 125.
+(pdftex.def)             Requested size: 204.85646pt x 96.02786pt.
+
+<_content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-regi
+0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gaina_est.pdf, id=1462, 455.24078pt 
+x 213.39726pt>
+File: _content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc
+-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gaina_est.pdf Graphic file (typ
+e pdf)
+
+<use _content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-
+regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gaina_est.pdf>
+Package pdftex.def Info: _content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a
+_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gaina_est.pd
+f used on input line 136.
+(pdftex.def)             Requested size: 204.85646pt x 96.02786pt.
+
+<_content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-regi
+0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gaina_est_diffp.pdf, id=1463, 455.24
+078pt x 213.39726pt>
+File: _content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc
+-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gaina_est_diffp.pdf Graphic fil
+e (type pdf)
+
+<use _content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-
+regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gaina_est_diffp.pdf>
+Package pdftex.def Info: _content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a
+_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gaina_est_di
+ffp.pdf used on input line 140.
+(pdftex.def)             Requested size: 204.85646pt x 96.02786pt.
+) [63 <./_content/appgain/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_gaina_est.pd
+f> <./_content/appgain/_fig/lyr11a_n25_d13a_distorted-sd3a-gtes_gaina_est_diffp
+.pdf>]
+[64 <./_content/appgain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_lo
+c-regi0_c-s40k-p0p0-pp1_d13a_distorted-sd3a-gtes_gaina_est.pdf> <./_content/app
+gain/_fig/m02a-lyr11a_cb12-h0a2a-d05a-t01a_dr-e43n42_cb1X_loc-regi0_c-s40k-p0p0
+-pp1_d13a_distorted-sd3a-gtes_gaina_est_diffp.pdf>]
+(./_content/conclusions/conclusions.tex
+Chapter 5.
+[65
+
+
+] [66]) (./phdthesis_tawatr_picked.bbl [67] [68
+
+] [69]
+Underfull \hbox (badness 1577) in paragraph at lines 143--147
+\OT1/cmr/m/n/12 so-lu-tion for the 2-D mag-ne-totel-luric impedance ten-sor dis
+-torted
+ []
+
+[70] [71] [72] [73] [74] [75]) [76] [77
+
+] (./phdthesis_tawatr.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5931 strings out of 493633
+ 107402 string characters out of 3143378
+ 150538 words of memory out of 3000000
+ 8997 multiletter control sequences out of 15000+200000
+ 13686 words of font info for 57 fonts, out of 3000000 for 9000
+ 831 hyphenation exceptions out of 8191
+ 38i,23n,35p,1344b,439s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <./dbtt.1080pk></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmbx6.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmex10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi6.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
+pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
+b></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
+/usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
+r/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
+ocal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
+cal/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/loca
+l/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
+texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/t
+exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/te
+xlive/2011/texmf-dist/fonts/type1/public/esint-type1/esint10.pfb>
+Output written on phdthesis_tawatr.pdf (87 pages, 3526851 bytes).
+PDF statistics:
+ 1789 PDF objects out of 2073 (max. 8388607)
+ 1206 compressed objects within 13 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 251 words of extra memory for PDF output out of 10000 (max. 10000000)
+

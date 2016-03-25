@@ -1,0 +1,169 @@
+% !TEX root = ../../phdthesis_tawatr.tex 
+
+%% ==== ==== ==== ==== 
+\section{Magnetotellurics}\label{sect:mt_background}
+%	\begin{itemize}
+%		\item 
+
+%\blue{
+%The magnetic field, electric field and electrical properties, e.g., conductivity, are interrelated, and 
+%their relationship is governed by Maxwell's equations.
+%Therefore, Earth's conductivity structure can be constructed employing Earth's electric and magnetic fields.
+%}
+
+		Electromagnetic induction is the interrelation between magnetic and electric fields within the Earth.
+		By analogy with Faraday's law of induction, the time-varying Earth's magnetic field causes the electric field (or known as the telluric current), to flow within Earth, which acts like a conductor. 
+		%This effect is namely electromagnetic induction. 
+		The induction effect was independently observed by \citet{rikitake1946a} and \citet{tikhonov1950a}, and it was used to investigate the electrical property of the Earth's crust.
+%		\item 
+		The induction effect was made practical for exploration purposes by \citet{cagniard1953a} and is also known as magnetotellurics or MT.
+%	\end{itemize}
+
+%	\begin{itemize}
+%		\item 
+		On the Earth's surface, MT can image the Earth resistivity structure using the naturally-occurring magnetic and electric fields, which are governed by Maxwell's equations. 
+%		\item 
+		Since it was introduced, MT data acquisition processing and interpretation have been continuously developed, and MT has been used in various applications:
+		mantle studies \citep[e.g.,][]{berdichevsky1980a, baba2010a};
+		crustal studies \citep[e.g.,][]{heise2007a, unsworth2010a,boonchaisuk2013a};
+		ore exploration \citep[e.g.][]{tuncer2006a, turkoglu2009a};
+		geothermal exploration \citep[e.g.,][]{pellerin1996a, heise2008a, amatyakul2015a};
+		environmental applications \citep[e.g.,][]{unsworth2007a};
+		and many others.
+%	\end{itemize}
+	
+%% ==== ==== ==== ==== 
+\subsection*{\hspace{20mm}MT impedance}
+%% ==== Talking about impedance
+%	\begin{itemize}
+%		\item
+		 The MT response or known as MT impedance is obtained from the linear relationship between the horizontal magnetic field $\Bbf_\text{h}$ to the horizontal electric field $\Ebf_\text{h}$ in the frequency domain. 
+%		 \red{
+		 Given that the electric and magnetic fields are collected at the location $\rbfi$, the MT impedance is written as
+	\begin{equation} 
+		\begin{split}
+			\Ebf_\text{h}\fxriomega & = \Zbf\fxriomega\, \Bbf_\text{h}\fxriomega \\
+			\EVecfxriomega & = \ZMatrixfxriomega\BVecfxriomega,
+		\end{split}
+	\end{equation}
+	where $\omega$ is the angular frequency, $\omega=2\pi f$.
+	The spatial and frequency dependence of the MT impedance will be omitted in the rest of this thesis.
+%	}
+	The transfer function {\Zbf} (also called the impedance tensor) is a second rank $2\times2$ tensor with components $\Zxx\ \Zxy\ \Zyx$ and ${\Zyy}$, or known as MT impedances, are complex-valued numbers. Here, the frequency dependent part was omitted. The subscripts $x$ and $y$ denote the orthogonal components of magnetic fields and electric fields pointing northward and eastward, respectively. 
+	The components are generally represented by the magnitude (apparent resistivity) and phase,
+	\begin{equation}
+		\begin{split}
+			\rho_{a,ij} & =\frac{\mu_0}{\omega} | \Zij | ^2, \\
+			\phi_{ij} & = \arg(\Zij).
+		\end{split}
+	\end{equation}
+%	The apparent resistivity simply tells us how conductive or resistive of the earth.
+
+%	\item 
+	The MT impedance itself is able to indicate the Earth dimensionality. In the 1D Earth, the electric field (and also the magnetic field) are the same in any directions, and the electric and magnetic fields 
+%	\st{in the same direction have no coupling} 
+%	\red{
+	are related only in orthogonal directions.
+%	}. \blueb{I'd like to say Ex and Bx has no relation.} 
+	The MT impedance becomes antisymmetric with zero diagonal components:
+	\begin{equation}\label{eq:z_cond_1d}
+	\begin{split}
+		\Zxx & = \Zyy = 0, \\
+		\Zxy & = - \Zyx = \ZOneD,
+	\end{split}
+	\end{equation}
+	where $\ZOneD$ denotes the impedance derived from the 1D structure.
+	In the 2D situation, given that the observation coordinate is in the strike direction, the orthogonal components of the electric field and those of the magnetic field are different, but there is still no coupling between the same components of electric and magnetic fields. The off-diagonal components of MT impedance are no longer equivalent:
+	\begin{equation}
+		\Zxy \neq - \Zyx.
+	\end{equation}
+	But, in general cases (3D situation), the elements of the impedance tensors become:
+	\begin{equation}
+		\begin{split}
+			\Zxx & \neq 0, \\
+			\Zyy & \neq 0, \\
+			\Zxy & \neq -\Zyx. \\
+		\end{split}
+	\end{equation}
+%	\end{itemize}
+
+	
+%% ==== Talking about rotational invariant
+ \subsection*{\hspace{20mm}Rotational invariant}
+% 	\begin{itemize}
+%	\item [Rotational invariant]
+%	\item
+	 Theoretically, the impedance tensor could be defined without reference to any horizontal coordinate system, but in practice the impedance tensor must be specified to the coordinate of observation.
+%	\item
+	 Given that $\ZbfRegional$ is the impedance tensor in the regional or principal coordinate, 
+%	 \red{
+	 which is generally defined as the strike coordinate in 2D studies but it has no definition in 3D situations,
+%	 }
+	  the representation of this impedance tensor specific to the coordinate of observation $\ZbfObserved$, which is rotated by the angle $\theta$ relative to the principal coordinate in the clockwise direction, could be written as
+			\begin{equation}
+				\ZbfObserved = \Thetabf(\theta)\ZbfRegional\transpose{\Thetabf}(\theta),
+			\end{equation}
+			where the rotational matrix is
+			\begin{equation}
+				\Thetabf(\theta) = \ThetaMatrix.
+			\end{equation}
+			The principal or regional impedance is dependent on the observation coordinate. An attribute of the impedance tensor that remains unchanged under the rotation of the observation coordinate is referred to as being rotationally invariant. For example the determinant of the impedance tensor:
+		\begin{equation*}
+			\det(\ZbfObserved) = \det( \Thetabf\,\ZbfRegional \transpose{\Thetabf} ) = \det(\Thetabf) \det(\ZbfRegional) \det(\transpose{\Thetabf}) = \det(\ZbfRegional),
+		\end{equation*}
+where the function of angle $\theta$ was omitted.
+
+% 	\begin{itemize}
+%		\item 
+		Since the beginning of MT, many rotational invariant properties of MT impedance have been introduced. 
+%		\item
+		 For example, the determinant was used to estimate the regional structure \citep[e.g.,][]{berdichevsky1980a}. Swift's skew \citep{swift1967a} and Bahr's skew \citep{bahr1988a}, which serve as the dimensionality indicators, was developed based on the rotationally invariant properties. 
+%		\item
+		 However, after the systematic and thorough investigation by \citet{szarka1997a}, the set of rotational invariants was introduced and it is able to represent the impedance tensor.
+%		\item
+		 \citet{weaver2000a} introduced another selection of rotational invariants, which are able to constrain the subsurface structure geometry,  and also a compact geometrical visualization of the impedance tensor using Mohr's circle.
+%	\end{itemize}
+	
+%% ==== Talking about rotational invariant in this work	
+%	\begin{itemize}
+%		\item [\textcolor{blue}{In this work}]
+%		\item 
+		Among the number of rotational invariants, we are interested in two of them. 
+		First, the determinant (det), 
+		\begin{equation}
+			\det(\Zbf) = \Zxx\Zyy-\Zxy\Zyx, 
+		\end{equation}
+		and, second, the sum of the squared elements (ssq)
+		\begin{equation}
+			\ssq(\Zbf) = \tracefunc{\transpose{\Zbf}\Zbf} =  \Zxx^2 + \Zxy^2 + \Zyx^2 + \Zyy^2,
+		\end{equation}
+		where $\mathrm{tr}$ denotes the matrix trace. 
+		The corresponding {\det} and the {\ssq} impedances are defined as follows:
+		\begin{equation} \label{eq:zdet_def}
+			\Zdet = \sqrt{\det(\Zbf)}, 
+		\end{equation}
+		and
+		\begin{equation}\label{eq:zssq_def}
+			\Zssq = \sqrt{\ssq(\Zbf)/2}.
+		\end{equation}
+		The coefficient of $1/\sqrt{2}$ was introduced in the definition of {\ssq} impedance to conserve the impedance magnitude. 
+%		In general, the det and ssq impedaces derived from the regional or undistorted impedance are different only slightly.
+		
+%		\item 
+		In MT, the determinant is a widely-used rotational invariant.
+		It was applied in various applications, for example, in marine studies \citep[e.g.,][]{seama2007a, baba2010a, yang2010a}.
+		%
+		\citet{oldenburg1993a} and \citet{pedersen2005a} developed 2D MT inversion using the det impedance.
+		\citet{arango2009a} used the det impedance to deal with 3D MT data. 
+		\citet{tournerie2002a} and \citet{avdeeva2015a} used the average det impedances to construct the \emph{a priori} model.
+		\citet{lezaeta2003a} introduced the current channeling indicator using the det impedance.
+				
+%		\item 
+		In contrast to the det impedance, the ssq impedance is less familiar to the induction community. 
+		It was first introduced by \citet{szarka1997a} to form the complete set of MT rotational invariants and only a few applications were reported \citep[e.g.,][]{szarka2000a, szarka2005a}.
+		\citet{romo2005a} used the det and ssq equivalents to define another representation of MT impedance. \citet{gomez-trevino2014a} proposed the method to solve galvanic distortion in a 2-D regional structure with the det and ssq impedances.
+%	\end{itemize}
+	
+	
+	
+	

@@ -1,0 +1,58 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% copy this to the top of .toc: %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%backup  \edef\TEST{chapter}\edef\TESTT{#1}\ifx\TEST\TESTT\vskip-0.25\baselineskip\else\vskip0.3\baselineskip\fi
+%backup \edef\TEST{chapter}\edef\TESTT{#1}\ifx\TEST\TESTT\vskip-0.24\baselineskip\else\vskip0.24\baselineskip\fi
+  %\edef\TEST{chapter}\edef\TESTT{#1}\ifx\TEST\TESTT\vskip0.00\baselineskip\else\vskip0.0\baselineskip\fi
+\let\CL\contentsline\def\contentsline#1#2#3{%
+  \edef\TEST{chapter}\edef\TESTT{#1}\ifx\TEST\TESTT \vskip-0.24\baselineskip\else \vskip0.10 \baselineskip\fi
+  \CL{#1}{#2}{#3}}
+
+%%%%%%%%%%%%%%%%%
+%% Space between header and first line
+  \vskip 5\p@
+\contentsline {chapter}{}{Page \kern-6pt}%
+%%%%%%%%%%%%%%%%%
+\CL {chapter}{ACKNOWLEDGEMENTS}{iii}
+\vspace{-3mm}
+\CL {chapter}{ABSTRACT (ENGLISH)}{iv}
+\vspace{-3mm}
+\CL {chapter}{ABSTRACT (THAI)}{v}
+\vspace{-3mm}
+\CL {chapter}{\MakeTextUppercase {Contents}}{vi}
+\vspace{-3mm}
+\CL {chapter}{\MakeTextUppercase {List of Figures}}{viii}
+\vspace{-3mm}
+\CL {chapter}{CHAPTER {I} INTRODUCTION}{1}
+\vspace{-3mm}
+\CL {chapter}{CHAPTER {II} THEORETICAL BACKGROUND}{8}
+\CL {section}{\numberline {\normalsize 2.1}\normalsize Magnetotellurics}{8}
+\CL {section}{\numberline {\normalsize 2.2}\normalsize Berdichevsky average}{12}
+\CL {section}{\numberline {\normalsize 2.3}\normalsize Galvanic distortion}{13}
+\contentsline {subsection}{\numberline {\normalsize 2.3.1}\normalsize Galvanic distortion principle}{15}
+\contentsline {subsection}{\numberline {\normalsize 2.3.2}\normalsize Groom--Bailey's framework}{19}
+\vspace{-3mm}
+\CL {chapter}{CHAPTER {III} PROPOSED METHODS}{23}
+\contentsline {section}{\numberline {\normalsize 3.1}\normalsize Distorted invariant impedances}{23}
+\contentsline {subsection}{\numberline {\normalsize 3.1.1}\normalsize Distorted det impedance}{23}
+\contentsline {subsection}{\numberline {\normalsize 3.1.2}\normalsize Distorted ssq impedance}{25}
+\contentsline {section}{\numberline {\normalsize 3.2}\normalsize Redefining the Berdichevsky average}{26}
+\contentsline {section}{\numberline {\normalsize 3.3}\normalsize Indicating the galvanic distortion}{29}
+\contentsline {subsection}{\numberline {\normalsize 3.3.1}\normalsize Local and regional distortion indicators}{29}
+\contentsline {subsection}{\numberline {\normalsize 3.3.2}\normalsize Apparent gains}{31}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\contentsline {chapter}{\begin{center} \vskip-20pt \large CONTENTS (cont.) \end{center}}{}%
+\vskip 5\p@ 
+\contentsline {chapter}{\vskip-6pt}{Page \kern-6pt}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\contentsline {chapter}{CHAPTER {IV} SYNTHETIC EXPERIMENTS AND DISCUSSION}{34}
+\contentsline {section}{\numberline {\normalsize 4.1}\normalsize 1D examples}{34}
+\contentsline {section}{\numberline {\normalsize 4.2}\normalsize 3D examples}{42}
+\contentsline {section}{\numberline {\normalsize 4.3}\normalsize Examination of theoretical definition}{49}
+\contentsline {section}{\numberline {\normalsize 4.4}\normalsize Local and regional distortion indicators}{54}
+\contentsline {section}{\numberline {\normalsize 4.5}\normalsize Apparent gains}{60}
+\vspace{-1mm}
+\contentsline {chapter}{CHAPTER {V} CONCLUSIONS}{65}
+\vspace{-1mm}
+\contentsline {chapter}{\MakeUppercase {References}}{68}
+\vspace{-1mm}
+\contentsline {chapter}{BIOGRAPHY}{77}

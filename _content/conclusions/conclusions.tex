@@ -1,0 +1,79 @@
+
+% !TEX root = ../../phdthesis_tawatr.tex 
+\renewcommand{\thisdir}{_content/conclusions}
+\renewcommand{\figdir}{\thisdir/_fig}
+\chapter[Conclusions]{Conclusions}
+
+%\begin{itemize}
+%	\item 
+%	The optimal model of the regional mean 1D conductivity profile would be a good 
+%	Any conductivity distribution can be expressed as the regional mean 1D conductivity profile and the lateral conductivity contrast. 
+%	\item 
+%	\red{
+	One strategy in performing 3D inversion is to start by searching for a reliable model of the regional mean 1D conductivity profile which is able to minimize the variance of the conductivity contrast. 
+%	}
+%	\item 
+	Traditionally, the model of the regional mean 1D conductivity profile was estimated from the Berdichevsky average, i.e., the average det impedance, which is able to smooth out the galvanic effect from small-scale local structure. However, it had been introduced before the knowledge of galvanic distortion was well established. Therefore, the effect of the galvanic distortion on the Berdichevsky average has never been examined.
+%\end{itemize}
+
+%\begin{itemize}
+%	\item 
+	Galvanic distortion is the spatial aliasing in MT data by small-scale near-surface heterogeneity, and it is unavoidable in general.
+%	\item 
+	The question is how reliable is the model obtained from the Berdichevsky average with the presence of galvanic distortion.
+%	\item 
+	The ssq impedance is therefore introduced as another rotation invariant candidate to challenge this problem.
+%	\item 
+	The det and ssq impedances derived from the distorted MT impedance are algebraically examined using the Groom--Bailey model of galvanic distortion.
+%	\item 
+	It is found that the det impedance is biased downward by the shear and splitting parameters, while the ssq impedance is less sensitive to these distortion parameters.
+%	\item 
+	This major finding urges us to redefine the Berdichevsky average with the ssq impedance in order to reliably estimate the model of the regional mean 1D conductivity profile.
+%	\item 
+	From the synthetic examples, the models obtained from the traditional Berdichevsky average may overestimate the regional mean 1D conductivity profile.
+ Regardless of the galvanic distortion strength, the average ssq impedance is theoretically and numerically proven to be the promising method to accurately estimate the model of the regional mean 1D conductivity profile.
+
+%% ==== Theoretical def
+%\begin{itemize}
+%	\item 
+	The definitions for the theoretical model of the regional mean 1D conductivity profile are also introduced. 
+%	\item 
+	Instead of comparing the estimated model with the host background, which is not viable in reality, we are able to compare the estimated model with the theoretical model from the given definitions.
+%	\item 
+	The theoretical model could be calculated using either a linear or logarithmic scale average depending on the choice of model parameters in optimization.
+%	\item 
+	The numerical results show that the theoretical models are consistent with the estimated model when the MT array is larger than the anomaly size. 
+%	\item 
+	Therefore, the theoretical and estimated model of the regional mean 1D conductivity profile is reliable with the appropriate size of MT array.
+%\end{itemize}
+
+%% ==== Distortion indicators: Local and Regional
+%\begin{itemize}
+%	\item 
+	In addition, the concept of galvanic distortion-related parameters was first introduced.
+%	\item 
+	Using these parameters enables us	to indicate the existence of galvanic distortion and also to quantify its strength. 
+%	\item 
+	Two type of indicators are defined from the det and ssq impedances, the local and regional distortion indicators and the apparent gains. Their functions are totally different. The former is to indicate the strength of the shear and splitting effect, and the latter is to be a good approximate of site gain, which is generally claimed to be the undeterminable distortion parameter.
+%	\item 
+	Note that the effect of twist cannot be ascertained because both det and ssq impedance are rotationally invariant.
+%	\item 
+	One possible and practical use of the local distortion indicator is to point out heavily distorted MT data, which may be rejected in interpretation. The regional distortion indicator can be used to determine the necessity of the proper treatment or removal of galvanic distortion, which may be algebraically complicated and computationally expensive. 	
+%\end{itemize}
+
+
+%% ==== Concluding paragraph
+%\begin{itemize}
+%	\item 
+%\red{
+	The ultimate goal of this thesis is to handle the problem of galvanic distortion, particularly in imaging 3D conductivity structure.
+	In conclusion, we propose to estimate the model of the regional mean 1D conductivity profile, less biased by the galvanic distortion, with the average ssq impedance and make the distortion strength quantifiable with the galvanic distortion indicators. 
+	The theoretical derivation of them was verified by a series of synthetic examples.
+	With the proposed method, the unbiased models of the regional mean 1D conductivity profile could be obtained even if the datasets are distorted.
+	The galvanic distortion indicators would help determine the need of applying the augmented approach, e.g., 3D inversion including galvanic distortion, or the omission of heavily distorted data.
+%	\item
+%	\item 
+	The proposed method to reliably estimate the model of the regional mean 1D conductivity profile from the set of distorted MT data and the concept of galvanic distortion indicators would be essential and instructive in 3D inversion.
+%	}
+		
+%\end{itemize}

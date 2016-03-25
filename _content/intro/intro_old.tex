@@ -1,0 +1,123 @@
+
+% !TEX root = ../../phdthesis_tawatr.tex 
+\renewcommand{\thisdir}{_content/intro}
+\renewcommand{\figdir}{\thisdir/_fig}
+
+\chapter{Introduction}
+
+\blueb{The importance of conductivity structure -- same as previously}
+
+\red{
+Integrating Earth's conductivity structure into its seismic structure help complement our understanding of Earth's interior. The conductivity structure itself is not only related to thermal structure but also the water content in mantle's minerals \citep[e.g.,][]{karato1990a, yoshino2006a}, which is believed to play an important role in mantle rheology, dynamics and evolution \citep[e.g.,][]{baba2010a, shimizu2010b}.  Also, studying the crustal structure in terms of its conductivity in conjunction with other physical properties of Earth helps better understand tectonic setting and its transformation \citep[e.g.,][]{muller2009a, unsworth2010a,  boonchaisuk2013a}.
+}
+
+\blueb{How could we obtain the conductivity structure? The problem. Also, I put one objective of this thesis in this paragraph. I try to put the second objective (galvanic distortion indicators) here. But, if doing so, I think several meterials (e.g., MT, galvanic distortion) must be added. 
+Then I decide to put the second objective in other parts of this chapter. What do you think?}
+
+\red{
+Earth conductivity structure could be inferred by employing the electromagnetic induction effect, the interrelation between the electric and magnetic fields of Earth. 
+With recent advances in data processing and inversion, constructing conductivity models from electromagnetic data becomes practical.  
+%
+The inverted conductivity models strongly rely on the regional mean one-dimensional (1D) conductivity profile, which is the azimuthal or areal average of the conductivity along the variable depth.
+%
+The gap is how reliable is the regional mean 1D conductivity profile has never been examined. 
+To address this problem, one objective of this thesis is to propose the method to reliably estimate the regional mean 1D conductivity profile.
+}
+
+
+%\begin{itemize}
+%	\item \blue{A very general introduction to the EM induction study is recommended, describing the concept to estimate the electrical conductivity in the Earth, the geophysical/geological importance of knowledge on the electrical conductivity in the crust and mantle, and so on.}
+%\end{itemize}
+
+%\begin{itemize}
+%	\item 
+	\red{In global scale,} the three-dimensional (3D) conductivity distribution $\sigma(r,\theta,\phi)$ is spatially heterogeneous. We can define the global mean one-dimensional (1D) conductivity profile at a certain depth $z$ as the azimuthal average over the entire surface of Earth:
+	\begin{equation}\label{eq:global_mean}
+		\sigma_0(z) = \frac{1}{S_0(z)} \oiint\, \sigma(z,\theta,\phi)\, \dwrt{S},
+	\end{equation}
+	where $S_0(z)$ is the total surface area of Earth at depth $z$ and $\dwrt{S}$ is an element of Earth's surface. Once the global mean 1D conductivity profile is defined in this way (Eq. \ref{eq:global_mean}), we can write the conductivity distribution at arbitrary position in the Earth as the combination of the global mean 1D conductivity profile and the conductivity contrast:
+	\begin{equation}\label{eq:global_model}
+		\sigma(z,\theta,\phi) = \sigma_0(z) + \Delta\sigma(z,\theta,\phi).
+	\end{equation}
+	
+%	\item 
+	Although the definitions of global mean 1D conductivity profile $\sigma_0(z)$ and the azimuthal contrast $\Delta\sigma(z,\theta,\phi)$ seem straightforward in theory, estimating them may be difficult in practice. It is possible to get the global mean 1D conductivity profile by performing the global induction studies using geomagnetic data, but the significant differences between existing inverted models \citep[e.g.,][]{kelbert2009a, kuvshinov2012a, semenov2012a} were observed. 
+	These results may include biases due to the non-uniformity of their site distribution or spatial aliasing, because the distribution of geomagnetic observatories and magnetotelluric (MT) observations is generally non-uniform and sometimes very sparse especially in oceanic regions. Also, electromagnetic induction is sensitive to the underlying structure and may be affected by the heterogeneity nearby each observation site. 
+	
+%	\item 
+	In this study, we focuses on MT, and we considered a case where the induction scale length is much smaller than the radius of Earth so that the sphericity of Earth can be ignored. Such a case is called a regional or local induction study. In general, MT studies focus on a limited region where a number of observations are made. From a given array of observations, the regional mean 1D conductivity profile is defined as,
+	\begin{equation}\label{eq:regional_mean_linear}
+		\sigma_\Regional(z) = \frac{1}{A_0} \oiint \sigma(x,y,z)\, \dwrt{A},
+	\end{equation}
+	where $A_0$ is the area where the observations are distributed, $\dwrt{A}$ is a surface element, and $\sigma(x,y,z)$ is the regional 3D conductivity distribution. Alternatively, 
+	%if conductivity contrast is minimized in logarithmic scale, 
+	we may use the logarithmic average to define the regional mean 1D conductivity profile:
+	\begin{equation}\label{eq:regional_mean_log}
+		\log \sigma_\Regional(z) = \frac{1}{A_0} \oiint \log \sigma(x,y,z)\, \dwrt{A}.
+	\end{equation}
+	Note that the arithmetic average of conductivity in logarithmic scale is equivalent to the geometric average of conductivity in linear scale. Mathematically, the logarithmic-scale average of conductivity will give the more resistive structure compared to the linear average definition.
+	As with Eq. \eqref{eq:global_model}, we can write the regional conductivity distribution as
+	\begin{equation}\label{eq:regional_model}
+		\sigma(x,y,z) = \sigma_\Regional(z) + \Delta\sigma(x,y,z)
+	\end{equation}	
+%\end{itemize}
+	The merit of defining the regional mean 1D conductivity profile $\sigma_\Regional(z)$ with the average approach (Eqs \ref{eq:regional_mean_linear} or \ref{eq:regional_mean_log}) is that  the variance of conductivity contrast $\Delta\sigma(z,\theta,\phi)$ is minimized in the study area. 
+	
+	Although, the choice of a good initial or prior models in 3D problems remains the matter of debate, the benefits of using the regional mean 1D model have been reported.
+	%
+	Solving forward problem would become more reliable becaused of the optimized conductivtiy contrast, which results in a better-conditioned system of equations in forward modeling \citep{avdeev2005a}. \citet{tada2014a} configured the reasonable initial and prior models for 3D inversion from the regional mean 1D models. \citet{avdeeva2015a} also claimed that defining the starting model using Berdichevsky average is better than using a homogeneous halfspace.
+%	\item 
+
+
+%\begin{itemize}
+%	\item [why we need regional mean 1D]
+%	\item Some recent works also used the regional mean 1D model as an initial or an \emph{a priori} models.
+%	\item results in 
+%	\item (State some reasons why we need the regional mean) 
+%	\item Having the optimal model of regional mean conductivity profile is thus important.
+%\end{itemize}
+
+
+%\begin{itemize}
+%	\item [Problem]
+%	\item 
+The problem is how we could obtain the reliable model of the regional mean conductivity profile.
+	Ones may use the so-called Berdichevsky average \citep{berdichevsky1980a} that is to estimate the regional mean conductivity profile by averaging the determinant (det) impedances from a number of MT observations within an area of interest. 
+	The det impedance is one of the rotational invariant attribute of MT data, so it is independent of the observation coordinate orientation (Section \ref{sect:mt_background}).
+	The aim of applying average was to smooth out the local effect due to galvanic distortion (Section \ref{sect:berdichevsky}). 
+	Later on, this approach has been widely used and regarded as one of the most practical methods to estimate the regional structure \citep[e.g.,][]{tournerie2002a, baba2010a, tada2014a, avdeeva2015a}.
+
+%	\item 
+	The galvanic distortion is an alteration of MT data due to near-surface small-scale heterogeneity (Section \ref{sect:galvanic_distortion}).
+	The problem of galvanic distortion is well known among MT practitioners \red{and has been paid little attention so far}. Several attempts \citep[e.g.,][]{groom1989a, chave1994a, utada2000a, mcneice2001a, caldwell2004a, sasaki2006a, gomez-trevino2014a, avdeeva2015a, tietze2015a} have been introduced, but as of now this problem is not completely solved. 
+%	\item 
+	Further, recent studies \citep[e.g.,][]{gomez-trevino2013a, rung-arunwan2015a}  shown that the det impedance may contain biases from galvanic distortion (see Section \ref{sect:distorted_invariants}). 
+However, \citet{baba2010a} and other marine MT studies successfully apply the det impedance, because the galvanic distortion in marine environment is generally weak. Unfortunately, this condition may not be hold in cases of MT observation on land \citep[e.g.,][]{berdichevsky1980a}.		
+	Hence, averaging the det impedances may not be the good strategy for all situations.
+	The investigation was made to seek for the more appropriate rotational invariant candidate.
+	As proven to be less sensitive to the galvanic distortion, the sum of the squared elements (ssq) impedance \citep[first introduced by][]{szarka1997a} was chosen to redefine the Berdichevsky average (Section \ref{sect:berdichevsky_redefined}).
+%\end{itemize}
+
+\blueb{Another objective of galvic distortion indicators}
+
+%\begin{itemize}
+%	\item [Indicators]
+%	\item 
+	\red{Last but not least, in addition to the problem of how reliable is the estimated regional mean 1D conductivity profile, the existence of galvanic distortion in MT data has never been pointed out.
+	To tackle this problem, the another objective of this thesis is to introduce the concept of galvanic distortion-related parameters.}
+	Two types of indicators derived from the det and ssq impedances (Sections \ref{sect:indicators}) were defined: the local and regional distortion indicators and the apparent gains. The former is to indicate the distortion due to splitting and shear effect, and the latter is to estimate the site gain, which is the scaling in MT impedance amplitude. 
+	These parameters make the strength of galvanic distortion quantifiable. 
+	As a consequence, we are able to choose the appropriate approach to deal with MT data depending on how strongly distorted is the data.
+	
+%\end{itemize}
+%	\item Our synthetic examples (in Chapter XX) show that these two indicators would be able to determine the galvanic distortion posed in the data. 
+
+%% ==== Concluding
+%\begin{itemize}
+%	\item [Concluding]
+%	\item 
+	In summary, this thesis gives the use of rotational invariants in two ways. The first is using the ssq invariant to estimate the regional mean 1D conductivity profile.
+	The second is deriving the galvanic distortion indicators from the combination of det and ssq invariants. 
+	Our synthetic experiments (in Chapter \ref{chap:synthetic}) demonstrate that the proposed methods would be the promising approach to handling sets of MT data and solving many difficulties found in inverting 3D data.
+%\end{itemize}
+	

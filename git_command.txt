@@ -1,0 +1,6 @@
+echo "# phdtheis_latex" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/tawatr/phdtheis_latex.git
+git push -u origin master

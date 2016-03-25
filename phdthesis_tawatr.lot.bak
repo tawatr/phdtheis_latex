@@ -1,0 +1,17 @@
+\let\CL\contentsline\def\contentsline#1#2#3{%
+  \edef\TEST{chapter}\edef\TESTT{#1}\ifx\TEST\TESTT\vskip-0.25\baselineskip\else\vskip0.3\baselineskip\fi
+  \CL{#1}{#2}{#3}}% make line spacing 1.5 %
+  \vskip 5\p@ 
+\contentsline {chapter}{Tables}{Page \kern-6pt}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\contentsline {table}{\numberline {4.1}{\ignorespaces Numbers of interiors, horizontal and vertical interfaces, and intersections when the computation domain $M_Z\times M_Y$ is partitioned into $P_Z\times P_Y$.}}{50}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Numbers of interiors, interfaces, and intersections of $120\times 360$ meshes partitionined into $4\times 4$ sub-domains are shown.}}{50}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Block and sub-block dimensions of the interface Schur complement in MHD}}{62}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Number of elements stored for the interface Schur complement in MHD, where the model size is $120\times 360$ and the model is partitioned into $4\times 4$ sub-domains.}}{62}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Number of elements stored for the interface Schur complement in MHDRB when the model size is $120\times 360$ and the model is partitioned into $4\times 4$ sub-domains.}}{74}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {7.1}{\ignorespaces The two-block model discretized into three different meshes: $80\times 240$, $120\times 360$ and $160\times 480$. $P_Z$ and $P_Y$ are the numbers of sub-domains in $z$- and $y$-directions specific to each mesh.}}{78}
+\contentsline {table}{\numberline {7.2}{\ignorespaces Computational loads from FDWD, HD, MHD and MHDRB. The minimum CPU time and memory consumption from domain decomposition solvers is provided at different partitioning $P_Z\times P_Y$.}}{79}
+\addvspace {10\p@ }

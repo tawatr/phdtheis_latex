@@ -1,0 +1,249 @@
+\documentclass[natbib]{muthesis_tawatr}
+
+%\draft
+%\notitlepage
+\usepackage{graphicx}
+%\renewcommand\textfraction{.01}
+%\setcounter{totalnumber}{9}
+%\setlength{\floatsep}{1cm} 
+%\setcounter{secnumdepth}{4} \setcounter{tocdepth}{4}
+\renewcommand{\arraystretch}{1.5}
+\usepackage{geometry}
+\usepackage{tabularx, booktabs}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\usepackage{rotating}
+%\usepackage[none]{hyphenat}
+
+%% ===  Tawat R.
+\usepackage{comment}
+\usepackage{amsmath,esint}
+\usepackage{graphicx, float}
+\usepackage{ graphicx, subfigure }
+\usepackage{color,soul}
+
+% Place the figure on top
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
+
+% === Testing remove dots in toc lof lot
+\makeatletter
+\renewcommand{\@dotsep}{10000} 
+\makeatother
+
+%% === Tawat MU formatting
+%\renewcommand\subsection{%
+%  \@startsection{subsection}{3}
+%  {-2pc}% <------- The opposite of what we set for subs
+%  {-3.25ex\@plus -1ex \@minus -.2ex}%
+%  {1.5ex \@plus .2ex}%
+%  {\normalfont\normalsize\bfseries}}
+%\makeatother
+
+
+%% === Plotting scale
+\newcommand{\plotmtrespscale}{0.45}
+\newcommand{\plotinvmodelscale}{0.45}
+\newcommand{\plotchkboardsize}{3.2in}	% in
+\newcommand{\plotdindmeanscale}{0.45}
+
+
+% To remove parentheses when cite subfigure 
+\makeatletter
+\renewcommand{\thesubfigure}{\alph{subfigure}}
+\renewcommand{\@thesubfigure}{(\alph{subfigure})\hskip\subfiglabelskip}
+\renewcommand{\@@thesubfigure}{(\alph{subfigure})}
+\makeatother
+
+% To justify the caption
+\captionsetup{justification=justified, singlelinecheck=false}			
+
+%% === End of Tawat R.
+
+% information for front page
+
+\title{Estimating regional mean conductivity profiles and detecting galvanic distortion using magnetotelluric rotational invariants} 
+\candidate{Tawat Rung-Arunwan}
+\degree{PhD}
+\subject{Physics} 
+\submissionyear{2016}
+%\isbn{974-04-0357-3}
+
+% information for page i (advisors)
+
+%% WS
+\candidatetitle{Mr.\ }
+\majoradvisor{Weerachai Siripunvaraporn}
+\majoradvisortitle{Assoc. Prof.\ }
+\majoradvisorletters{Ph.D.}
+\majoradvisorsubject{Geophysics}
+%% HU
+\coadvisor{Hisashi Utada}
+\coadvisortitle{Prof.\ }
+\coadvisorletters{D. Sc.}
+\coadvisorsubject{Geophysics}
+\coadvisorstatus{Co-advisor}
+%% PK
+\coadvisorII{Pichet Kittara}
+\coadvisorIItitle{Asst. Prof.}
+\coadvisorIIletters{Ph.D.}
+\coadvisorIIsubject{Physics}
+%% CB
+\coadvisorIII{Chaiwoot Boonyasiriwat}
+\coadvisorIIItitle{Lect.}
+\coadvisorIIIletters{Ph.D.}
+\coadvisorIIIsubject{Scientific Computing}
+
+%\graduatestudiesdean{Prof.\ Liangchai Limlomwongse, Ph.D.}
+%\GSDstatus{Acting}
+\programchair{Assoc.~Prof.~Weerachai Siripunvaraporn}
+\programchairqual{Ph.D. (Geophysics)}
+\faculty{Science}
+
+% information for page ii (exam committee)
+
+\submissiondate{February 24, 2016}
+\chair{Dr.~Siriporn Chaisri}
+\chairqual{Ph.D. (Geophysics)}
+\memberIII{Lect.~Chaiwoot Boonyasiriwat}
+\memberIIIqual{Ph.D. (Scientific Computing)}
+%\memberIV{}
+%\memberIVqual{}
+\facultydean{Assoc.~Prof.~Sittiwat~Lertsiri}
+\FDqual{Ph.D. (Agricultural Science)}
+%\FDstatus{Acting}
+
+% information for page iv (ABSTRACT)
+\candidatenumber{5338860 SCPY/D}
+%\longsubject
+\keywords{magnetotellurics / rotational invariant}
+\keywordsII{regional studies / galvanic distortion}
+%\keywordsIII{}
+
+% information for page v (THAI ABSTRACT)
+\thaisubject{\thai{∑¥ Õ∫}}
+\thaicandidate{\thai{∏«—™ √ÿËßÕ√ÿ≥«√√≥}}
+\thaititle{\thai{°“√ª√–¡“≥}}
+\thaimajoradvisor{\thai{«’√–™—¬  ‘√‘æ—π∏Ï«√“¿√≥Ï}}
+\thaicoadvisor{\thai{√¶‚Äò‚Ä°‚Ñ¢‚Ä¶‚àû ¬∞‚Äò¬Æ‚àè‚Äú‚àö‚Äú}}
+\thaicoadvisorII{\thai{‚Ñ¢‚Äî¬¨¬´√ø‚â§‚Äò ‚à´√ø‚â†‚â†¬ª‚Äò‚àö‚Äò¬´‚Äî‚â§œÄ√è}}
+
+% information for Biography
+
+\dateofbirth{2nd November 1985}
+\placeofbirth{Chonburi, Thailand}
+%\longfirstdegree
+\firstdegree{Bachelor of Science}
+\firstdegreemajor{Physics}
+\firstdegreeinstitution{Mahidol University}
+\firstdegreeyears{2004--2007}
+\years{2010--2016}
+\preinstitution{Mahidol University, 2004--2010}
+\preinstitutionLnII{Master of Science (Physics)}
+%\postinstitution{Mahidol University}
+%\postinstitutionLnII{Master of Science (Physics)}
+\scholarship{Thailand Center of Excellence in Physics,}
+\scholarshipLnII{Commission of Higher Education,}
+\scholarshipLnIII{Ministry of Education, Thailand}
+\scholarshipII{The internship program,}
+\scholarshipIILnII{the Earthquake Research Institute,}
+\scholarshipIILnIII{the University of Tokyo, Japan}
+\position{}
+\workplace{}
+\homeaddress{}
+\homeaddressLnII{}
+\email{t.rungarunwan@gmail.com}
+
+\begin{document}
+\maketitle
+\acknowledgements{
+Sincerely, I profoundly thank Assoc. Prof. Weerachai Siripunvaraporn and Prof. Hisashi Utada for their advices, encouragement and patience throughout my study.
+%
+%This work would never be complete without both of you.
+
+Also, I am very thankful to members of Geophysics Research Group, Mahidol University.
+Most importantly, I am very grateful to my family for their strong support.
+
+This study was supported by the Researching Assistant scholarship by the Thailand Center of Excellence in Physics (ThEP) and the intership program by the Earthquake Research Institute, the University of Tokyo, Japan.
+
+Most of figures were produced using the Generic Mapping Tools (GMT) software.
+}
+
+\abstract{
+\normalsize
+	Having a reliable regional mean conductivity profile is useful and informative in interpreting magnetotelluric (MT) data. Traditionally, the Berdichevsky average, the average determinant (det; which is an rotational invariant property) impedance, is used to estimate the regional mean conductivity profile. Nonetheless, the det impedance is found to be biased downward by galvanic distortion. As a consequence, the Berdichevsky average may overestimate the regional mean conductivity profile. On the contrary, the sum-of-the-squared-elements (ssq) impedance is less sensitive to such an effect. Using the average ssq impedance is a sensible choice to estimate the regional mean conductivity profile. In addition, the combination of det and ssq impedances enables us to indicate the existence and strength of galvanic distortion in MT data. The local and regional distortion indicators are introduced to quantify the strength of the shear and splitting effects in galvanic distortion at individual stations and throughout the dataset, respectively. The apparent gains are defined and proven to be a good approximation of the site gain, which is generally claimed to the non-determinable distortion parameters. These findings are advantageous and able to solve several problems with MT datasets in performing 3D inversion.
+}
+
+\thaiabstract{
+\thai{
+Thai abstract XXX
+}}
+
+% Set baseline
+\renewcommand{\baselinestretch}{1.0}
+\linespacing{1.5} % 1.5 checked to match with MS word
+
+\tableofcontents
+%\listoftables
+\listoffigures
+
+\linespacing{1.5} % 1.5 checked to match with MS word
+\setlength\parindent{2cm}
+\setcounter{secnumdepth}{3}
+\setcitestyle{aysep={,}}
+\setstretch{1.5}
+
+%\setlength{\bibsep}{0pt plus 0.3ex}
+
+%% ==== Content
+\input{_content/newcommand_latex}
+
+\newcommand{\thisdir}{./}
+\newcommand{\figdir}{./}
+
+\clearpage
+\input{_content/intro/intro.tex}
+%
+%\clearpage
+%\input{_content/intro/intro_old.tex}
+
+\clearpage
+\input{_content/theoretical_background/theoretical_background.tex}
+
+\clearpage
+\input{_content/reg1d_method/reg1d_method.tex}
+
+\clearpage
+\input{_content/reg1d_synthetic_1d/reg1d_synthetic_1d.tex}
+
+\clearpage
+\input{_content/reg1d_synthetic_3d/reg1d_synthetic_3d.tex}
+
+\clearpage
+\input{_content/reg1d_exam/reg1d_exam.tex}
+
+\clearpage
+\input{_content/gamma/gamma.tex}
+
+\clearpage
+\input{_content/appgain/appgain.tex}
+
+%\clearpage
+%\input{_content/htr_test/htr_test.tex}
+
+\clearpage
+\input{_content/conclusions/conclusions.tex}
+
+
+%\clearpage
+%\input{_content/unused_materials}
+
+
+\bibliographystyle{apa} % if you are using bibtex
+    \setlength{\bibsep}{2pt}	% To make the seperation between bibitem
+%\bibliography{/Users/tawatr/Research/_bib/_Bib_Induction/_Bib_Induction}
+\input{phdthesis_tawatr_picked.bbl}
+
+
+\biography
+\end{document}

@@ -1,0 +1,116 @@
+
+% !TEX root = ../../phdthesis_tawatr.tex 
+\renewcommand{\thisdir}{_content/htr_intro}
+\renewcommand{\figdir}{\thisdir/_fig}
+\chapter{Near-surface small-scale heterogeneity analysis}
+
+\section{Introduction}
+\begin{itemize}
+	\item This is also related to galvanic distortion
+	\item In contrast to the previous Chapter, we simulate the galvanic distortion by the layer of overburden \citep[e.g.,][]{avdeeva2015a}.
+\end{itemize}
+
+\section{Method}
+\subsection{3D MT modeling with finite electrode spacing}
+	\begin{itemize}
+		\item Describe 3D MT modeling with finite electrode spacing.
+		\item In most cases, the size of electric dipoles in MT survey is fixed to tens or hundred meters 
+		But, generally, the electric dipole length is very small compared to the scale of structure of interest. Hence, in the numerical modeling, the electric dipole length is ignored (later referred to as infinite electrode spacing).
+		\item However, in some cases the electric field dipole length was taken into account. For example, Network-magnetotelluric method \citep{uyeshima2001a} was developed to study large-scale 3D conductivity structure. The electric potential difference was measured with a commercial telephone network, which its length is of several tens kilometers.
+		\item To study the effect of overburden and make a more realistic modeling, the electric dipole length is included in the modeling. 
+		\item Following \citet{uyeshima2001a}, we calculate MT responses
+		\item Cite uyeshima paper
+	\end{itemize}
+
+\begin{itemize}
+	\item Here we got the impedance distorted by shallow thin overburden.
+\end{itemize}
+
+\subsection{Calculating the distortion parameters from the distorted impedance}
+\begin{itemize}
+	\item In general, solving for the distortion operator is underdetermined problems, unless some constraint or assumption is applied.
+	\item However, the undistorted impedance is known in synthetic experiments. Therefore the distortion operator (and also parameters) could be calculated from this expression, 
+	\begin{equation}
+		\Cbf = \ZbfDistorted\,\invfunc{\ZbfUndistorted}
+	\end{equation}
+	\item The distortion parameters -- gain, twist, shear and splitting -- can be obtained by the followings. 
+	\item First, we begin with deriving the analytical expressions for twist and shear parameters.
+	\item From the expression of the distortion operator $\Cbf$ in terms of Groom--Bailey's parameterization (eq. \ref{eq:c_gb}), we define the ratios 
+	\begin{equation}\label{eq:delta1_def}
+		\delta_1 = \frac{\Cxy}{\Cyy} = \frac{\shearp - \twistp}{\shearp\twistp+1},
+	\end{equation}
+	and
+	\begin{equation}\label{eq:delta2_def}
+		\delta_2 = \frac{\Cyx}{\Cxx} = \frac{\shearp + \twistp}{-(\shearp\twistp-1)}.	
+	\end{equation}
+	From eqs. \eqref{eq:delta1_def} and \eqref{eq:delta2_def}, rewriting 
+	\begin{equation}\label{eq:twist_delta1_def}
+		\twistp_{\delta_1} = \frac{-(\delta_1-\shearp)}{\delta_1\shearp+1},
+	\end{equation}
+	and
+	\begin{equation}\label{eq:twist_delta2_def}
+		\twistp_{\delta_2} = \frac{\delta_2-\shearp}{\delta_2\shearp+1}.
+	\end{equation}
+	Note that both are $\twistp_{\delta_1}$ and $\twistp_{\delta_2}$ the same twist parameter $\twistp$, but the subscripts $\delta_1$ and $\delta_2$ were added to identify the difference.
+	\item Equating $\twistp_{\delta_1}$ and $\twistp_{\delta_2}$, the shear parameter is expressed as
+	\begin{equation}\label{eq:shear_sol}
+		\shearp_{(\pm)} = \frac{1}{\delta_1+\delta_2} \left( \delta_1\delta_2 -1 \pm \sqrt{\delta_1^2 \delta_2^2 + \delta_1^2 + \delta_2^2 + 1} \right)
+	\end{equation}
+	Substituting eq. \eqref{eq:shear_sol} into eq. \eqref{eq:twist_delta1_def}, we obtained
+	\begin{equation}\label{eq:twist_sol}
+		\twistp_{(\pm)} = \frac{-(\delta_1 - \shearp_{(\pm)})}{\delta_1\,\shearp_{(\pm)}+1}
+	\end{equation}
+	\item Mention the non-uniquenes, because it is quadratic solution.
+	\item \textcolor{red}{Describe the selection criteria positive or negative solutions}
+	\item After obtaining the twist and shear parameters, we solve for the splitting parameter and site gain by the following.
+	\item Define the summation of distortion operator elements, 
+	\begin{equation}\label{eq:kappa1_def}
+		\kappa_1 = \Cxx + \Cyx = \NT\NS\NA\,\gainp\,\left( -(\shearp \twistp-1)(\splittingp+1) + (\shearp+\twistp)(\splittingp+1) \right) 
+	\end{equation}
+	\begin{equation}\label{eq:kappa2_def}
+		\kappa_2 = \Cxy + \Cyy = \NT\NS\NA\,g\,\left( -(\shearp - \twistp)(\splittingp - 1) - (\shearp\twistp+1)(\splittingp-1) \right) 
+	\end{equation}
+	From eqs. \eqref{eq:kappa1_def} and \eqref{eq:kappa2_def}, rewriting 
+	\begin{equation}\label{eq:splitting_kappa1_def}	
+		\splittingp_{\kappa_1} = \frac{\kappa_1}{\NT\NS\NA\,\gainp\,(1+\shearp+\twistp-\shearp\twistp)} - 1,
+	\end{equation}
+	and
+	\begin{equation}\label{eq:splitting_kappa2_def}	
+		\splittingp_{\kappa_2} = 1- \frac{\kappa_2}{\NT\NS\NA\,\gainp\,(1+\shearp-\twistp+\shearp\twistp)}.
+	\end{equation}	
+	As with eqs. \eqref{eq:twist_delta1_def} and \eqref{eq:twist_delta2_def}, both $\splittingp_{\kappa_1}$ and $\splittingp_{\kappa_2}$ are the same splitting parameter $\splittingp$.
+	By equating eqs. \eqref{eq:splitting_kappa1_def} and \eqref{eq:splitting_kappa2_def}, the site gain is yielded
+	\begin{equation}\label{eq:gain_sol}
+		\gainp=\frac{\kappa_1\,(\shearp-\twistp+\shearp\twistp + 1) + \kappa_2\,(\shearp+\twistp-\shearp\twistp+1)}{2\NT\NA\NS\,(\,(1+\shearp^2)(1-\twistp^2) + 2\shearp\,(1+\twistp^2)\,)}
+	\end{equation}
+	Then the splitting parameter would be obtained by substituting site gain (eq. \ref{eq:gain_sol}), shear (eq. \ref{eq:shear_sol}) and twist (eq. \ref{eq:twist_sol}) parameters into either eq. \eqref{eq:splitting_kappa1_def} or \eqref{eq:splitting_kappa2_def}.
+\end{itemize}
+
+\section{Numerical experiment}
+\begin{itemize}
+	\item The selected period range is so that the object less than
+	\item Also mention Avdeeva paper that they also used the overburden to simulate the galvanic distortion.
+\end{itemize}
+
+\section{Results and discussion}
+\begin{itemize}
+	\item Showing distortion parameters from some example
+	\item Showing the average gamma from each case.
+	\item Showing that the galvanic effect is invariant [The results from different mesh size]
+\end{itemize}
+
+%% ==
+
+[concluding paragraph]
+%% ==== Concluding
+\begin{itemize}
+	\item The results also show that the ssq impedance is downward biased by the galvanic effect from the overburden. This is as suggested by Groom--Bailey's model of galvanic distortion.
+	More explicitly, any models of galvanic distortion that is properly normalized would be consistent with the effect of overburden.
+\end{itemize}
+
+
+
+
+
+
+

@@ -1,0 +1,154 @@
+% !TEX root = ../phdthesis_tawatr.tex 
+
+%% Formatting
+\newcommand{\mbf}[1]{\mathbf{#1}}
+\newcommand{\areakm}[2]{#1 km $\times$ #2 km}
+\newcommand{\bluehighlighted}[1]{\textcolor{blue}{#1}}
+\newcommand{\redhighlighted}[1]{\textcolor{red}{#1}}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\redb}[1]{\textcolor{red}{[#1]}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\blueb}[1]{\textcolor{blue}{[#1]}}
+\newcommand{\GB}{{Groom--Bailey}}
+\newcommand{\EndBox}{\hfill\(\Box\)}
+
+%% Math general
+\renewcommand{\det}{\ensuremath{\mathrm{det}}}
+\newcommand{\ssq}{\ensuremath{\mathrm{ssq}}}
+\newcommand{\transpose}[1]{{#1}^\text{T}}
+\newcommand{\tracefunc}[1]{\mathrm{tr}(#1)}
+\newcommand{\invfunc}[1]{#1^{-1}}
+\newcommand{\Mbf}{\ensuremath{\mbf{M}}}
+\newcommand{\rbf}{\ensuremath{\mbf{r}}}
+\newcommand{\rbfi}{\ensuremath{\mbf{r}_i}}
+\newcommand{\fxr}{\ensuremath{(\mbf{r})}}
+\newcommand{\fxriomega}{\ensuremath{(\mbf{r}_i;\omega)}}
+
+\newcommand{\dwrt}{\ensuremath{\mathrm{d}}}
+\renewcommand{\div}{\nabla\cdot}
+\newcommand{\curl}{\nabla\times}
+\newcommand{\expe}[1]{e^{#1}}
+%% MT general
+\newcommand{\Ohmm}{\ensuremath{\Omega\,\text{m}}}
+\newcommand{\Ibf}{\ensuremath{\mbf{I}}}
+\newcommand{\Ebf}{\ensuremath{\mbf{E}}}
+\newcommand{\Bbf}{\ensuremath{\mbf{B}}}
+\newcommand{\Zbf}{\ensuremath{\mbf{Z}}}
+\newcommand{\fxomega}{(\omega)}
+\newcommand{\EVec}{\begin{bmatrix} E_x \\ E_y \end{bmatrix}}
+\newcommand{\BVec}{\begin{bmatrix} B_x \\ B_y \end{bmatrix}}
+\newcommand{\EVecfxriomega}{\begin{bmatrix} E_x\fxriomega \\ E_y\fxriomega \end{bmatrix}}
+\newcommand{\BVecfxriomega}{\begin{bmatrix} B_x\fxriomega \\ B_y\fxriomega \end{bmatrix}}
+\newcommand{\Zxx}{Z_{xx}}
+\newcommand{\Zxy}{Z_{xy}}
+\newcommand{\Zyx}{Z_{yx}}
+\newcommand{\Zyy}{Z_{yy}}
+\newcommand{\ZxxR}{Z_{xx}^\Regional}
+\newcommand{\ZxyR}{Z_{xy}^\Regional}
+\newcommand{\ZyxR}{Z_{yx}^\Regional}
+\newcommand{\ZyyR}{Z_{yy}^\Regional}
+
+\newcommand{\Zij}{\ensuremath{Z_{ij}}}
+\newcommand{\ZMatrix}{\begin{bmatrix} \Zxx & \Zxy \\ \Zyx & \Zyy\end{bmatrix}}
+\newcommand{\ZMatrixUndistorted}{\begin{bmatrix} \ZxxR & \ZxyR \\ \ZyxR & \ZyyR\end{bmatrix}}
+\newcommand{\ZMatrixfxriomega}{\begin{bmatrix} \Zxx\fxriomega & \Zxy\fxriomega \\ \Zyx\fxriomega & \Zyy\fxriomega \end{bmatrix}}
+
+\newcommand{\Regional}{\text{R}}
+\newcommand{\ZbfRegional}{\ensuremath \Zbf_\Regional}
+
+%% MT invariant
+\newcommand{\Thetabf}{\ensuremath \mbf{\Theta}}
+\newcommand{\ThetaMatrix}{\begin{bmatrix} \cos \theta & \sin \theta \\ -\sin \theta & \cos \theta \end{bmatrix}}
+
+\newcommand{\ZbfObserved}{\ensuremath \Zbf_\text{obs}}
+\newcommand{\Rbf}{\ensuremath \mbf{R}}
+\newcommand{\Zdet}{\ensuremath{Z_\text{det}}}
+\newcommand{\Zssq}{\ensuremath{Z_\text{ssq}}}
+\newcommand{\ZOneD}{\ensuremath{Z_\text{1D}}}
+
+%% Distortion
+\newcommand{\CMatrix}{\begin{bmatrix} \Cxx & \Cxy \\ \Cyx & \Cyy\end{bmatrix}}
+\newcommand{\Cxx}{\ensuremath{C_{xx}}}
+\newcommand{\Cxy}{\ensuremath{C_{xy}}}
+\newcommand{\Cyx}{\ensuremath{C_{yx}}}
+\newcommand{\Cyy}{\ensuremath{C_{yy}}}
+\newcommand{\Cij}{\ensuremath{C_{ij}}}
+\newcommand{\ZbfDistorted}{\ensuremath{\Zbf'}}
+\newcommand{\ZDistortedMatrix}{\begin{bmatrix} \Zxx' & \Zxy' \\ \Zyx' & \Zyy' \end{bmatrix}}
+\newcommand{\ZbfUndistorted}{\ensuremath{\Zbf}_\Regional}
+
+\newcommand{\ZdetDistorted}{\Zdet'}
+\newcommand{\ZdetUndistorted}{\Zdet^\Regional}
+\newcommand{\ZdetRegional}{\Zdet^\Regional}
+\newcommand{\ZdetRegionalMean}{ \bar{Z}_\det^\Regional} 
+\newcommand{\ZdetUndistortedMean}{\ZdetRegionalMean}
+\newcommand{\ZssqDistorted}{\Zssq'}
+\newcommand{\ZssqUndistorted}{\Zssq^\Regional}
+\newcommand{\ZssqDistortedExGain}{\Zssq^\dagger}
+\newcommand{\ZssqRegional}{\Zssq^\Regional}
+\newcommand{\ZssqRegionalMean}{ \bar{Z}_\ssq^\Regional} 
+\newcommand{\ZssqUndistortedMean}{\ZssqRegionalMean}
+
+\newcommand{\ZdetMean}{\bar{Z}_\det}
+\newcommand{\ZssqMean}{\bar{Z}_\ssq}
+
+\newcommand{\ZdetDistortedMean}{\bar{Z}'_\det}
+\newcommand{\ZssqDistortedMean}{\bar{Z}'_\ssq}
+
+%% GB model
+\newcommand{\gain}{\ensuremath{g}}
+\newcommand{\Cbf}{\ensuremath{\mbf{C}}}
+\newcommand{\Tbf}{\ensuremath{\mbf{T}}}
+\newcommand{\Sbf}{\ensuremath{\mbf{S}}}
+\newcommand{\Abf}{\ensuremath{\mbf{A}}}
+\newcommand{\eyeone}{\ensuremath{\mbf{I}_1}}
+\newcommand{\eyetwo}{\ensuremath{\mbf{I}_2}}
+\newcommand{\eyethree}{\ensuremath{\mbf{I}_3}}
+
+\newcommand{\alphaZero}{\ensuremath{{\alpha}_0}}
+\newcommand{\alphaOne}{\ensuremath{{\alpha}_1}}
+\newcommand{\alphaTwo}{\ensuremath{{\alpha}_2}}
+\newcommand{\alphaThree}{\ensuremath{{\alpha}_3}}
+
+\newcommand{\cZero}{\ensuremath{{c}_0}}
+\newcommand{\cOne}{\ensuremath{{c}_1}}
+\newcommand{\cTwo}{\ensuremath{{c}_2}}
+\newcommand{\cThree}{\ensuremath{{c}_3}}
+
+\newcommand{\SigmaZero}{\ensuremath{\mbf{\Sigma}_0}}
+\newcommand{\SigmaOne}{\ensuremath{\mbf{\Sigma}_1}}
+\newcommand{\SigmaTwo}{\ensuremath{\mbf{\Sigma}_2}}
+\newcommand{\SigmaThree}{\ensuremath{\mbf{\Sigma}_3}}
+\newcommand{\SigmaZeroMat}{\begin{bmatrix} 1 & 0 \\ 0 & 1\end{bmatrix}}
+\newcommand{\SigmaOneMat}{\begin{bmatrix} 0 & 1 \\ 1 & 0\end{bmatrix}}
+\newcommand{\SigmaTwoMat}{\begin{bmatrix} 0 & -1 \\ 1 & 0\end{bmatrix}}
+\newcommand{\SigmaThreeMat}{\begin{bmatrix} 1 & 0 \\ 0 & -1\end{bmatrix}}
+
+\newcommand{\gainp}{\ensuremath{g}}
+\newcommand{\twistp}{\ensuremath{t}}
+\newcommand{\shearp}{\ensuremath{e}}
+\newcommand{\splittingp}{\ensuremath{s}}
+\newcommand{\twista}{\ensuremath{\phi_t}}
+\newcommand{\sheara}{\ensuremath{\phi_e}}
+
+\newcommand{\gainpi}{\ensuremath{g_i}}
+\newcommand{\twistpi}{\ensuremath{t_i}}
+\newcommand{\shearpi}{\ensuremath{e_i}}
+\newcommand{\splittingpi}{\ensuremath{s_i}}
+
+\newcommand{\Tmatrix}{\ensuremath{ \begin{bmatrix} 1 & -\twistp \\ \twistp & 1 \end{bmatrix} } }
+\newcommand{\Smatrix}{\ensuremath{ \begin{bmatrix} 1 & \shearp \\ \shearp & 1 \end{bmatrix} } }
+\newcommand{\Amatrix}{\ensuremath{ \begin{bmatrix} 1 + \splittingp & 0 \\ 0 & 1-\splittingp \end{bmatrix} } }
+\newcommand{\NT}{\ensuremath{N_\Tbf}}
+\newcommand{\NS}{\ensuremath{N_\Sbf}}
+\newcommand{\NA}{\ensuremath{N_\Abf}}
+
+%% ====
+\newcommand{\gammai}{\gamma_i}
+\newcommand{\gammaimean}{\bar{\gamma}_i}
+\newcommand{\gammaR}{\gamma_\Regional}
+\newcommand{\gssqi}{\gainp^\ssq_i}
+\newcommand{\gdeti}{\gainp^\det_i}
+
+\newcommand{\gssqimean}{\bar{\gainp}^\ssq_i}
+\newcommand{\gdetimean}{\bar{\gainp}^\det_i}

@@ -1,0 +1,366 @@
+
+% !TEX root = ../../phdthesis_tawatr.tex 
+\renewcommand{\thisdir}{_content/reg1d_method}
+\renewcommand{\figdir}{\thisdir/_fig}
+\chapter[Proposed Methods]{Estimating the regional mean conductivity profile} 
+\label{chap:method}
+
+In addition to the definition of the theoretical model of regional 1D conductivity profile (Eqs. \ref{eq:regional_mean_linear} and \ref{eq:regional_mean_log}), we describe the methods proposed in this thesis. First, we showed our finding that the ssq impedance is less sensitive to galvanic distortion when compared to the det impedance. Then, we reexamine the Berdichevsky average and redefine it with the ssq impedance. Lastly, we propose the galvanic distortion-related indicators -- the local and regional distortion indicators, and the apparent gains.
+
+%\section{Theoretical model of the regional mean conductivity profile}
+%\begin{itemize}
+%	\item Present the definition of regional mean 1D.
+%	\item \red{Do we need to recap it? I don't think so}
+%\end{itemize}
+
+\section[Distorted invariant impedances]{Effect of galvanic distortion on the rotational invariants: Algebraic derivation}\label{sect:distorted_invariants}
+%\begin{itemize}
+%	\item 
+	In addition to the simple model of galvanic distortion over the det impedance by \citet{berdichevsky1980a}, \citet{gomez-trevino2013a} studied the effect of Groom--Bailey distortion parameters on the det and ssq impedances, but the study was limited to the 2D Earth.
+%	\item 
+	In this section, we provide the algebraic derivation of the distorted det and ssq impedances within the Groom--Bailey framework in the general case. 
+	The expressions of the distorted det and ssq impedances in \citet{rung-arunwan2016a} are clarified and derived in terms of the matrix operation which is simple and intuitive.
+%\end{itemize}
+
+\subsection{Distorted det impedance}
+%\begin{itemize}
+%	\item
+	 The determinant of the distorted impedance tensor is straightforward to derive by employing the multiplicative property of determinants. 
+	First, we begin with the generalized form Eq. \eqref{eq:z_distorted}, 
+		\begin{equation}\label{eq:detz_distorted_c}
+			\begin{split}
+				\det(\ZbfDistorted) & = \det(\Cbf\,\ZbfUndistorted) \\
+								& = \det(\Cbf)\,\det(\ZbfUndistorted).
+			\end{split}
+		\end{equation}
+%	\item 
+	Applying the Groom--Bailey framework, Eq. \eqref{eq:detz_distorted_c} becomes
+		\begin{equation}\label{eq:detz_distorted_gb}
+			\begin{split}
+				\det(\ZbfDistorted) & = \det(\gain\Tbf\Sbf\Abf)\det(\ZbfUndistorted) \\
+				& = g^2 \det(\Tbf) \det(\Sbf) \det(\Abf) \det(\ZbfUndistorted) \\	
+				& = g^2 \frac{1-e^2}{1+e^2} \frac{1-s^2}{1+s^2} \det(\ZbfUndistorted).
+			\end{split}
+		\end{equation}
+%	\item 
+	From Eq. \eqref{eq:zdet_def}, the distorted det impedances is then written as
+	\begin{equation}\label{eq:zdet_distorted_gb}
+		\ZdetDistorted = g\sqrt{\frac{1-e^2}{1+e^2} \frac{1-s^2}{1+s^2}}\,\ZdetUndistorted.
+	\end{equation}
+%	\item 
+	Evidently, the distorted det impedance is biased downward by the splitting and shear parameters:
+	\begin{equation}
+		|\ZdetDistorted| = \gainp\,\sqrt{\frac{1-\shearp^2}{1+\shearp^2} \frac{1-\splittingp^2}{1+\splittingp^2}}\,|\ZdetUndistorted| \le \gainp\, |\ZdetUndistorted|
+	\end{equation}
+%	\item 
+	Hence, using the det impedance may result in an underestimating the regional impedance by the shear and splitting effects.
+
+	From Eqs. \eqref{eq:detz_distorted_c} and \eqref{eq:detz_distorted_gb}, the effect of galvanic distortion on the det impedance causes only the impedance scaling. 
+	The expression in Eq. \eqref{eq:zdet_distorted_gb} also clarifies the coefficient $K_i$, which have no definition but the random quantity, in the galvanic distortion model of \citet{berdichevsky1980a} (Eq. \ref{eq:berdichevsky_galvanicdistortion_model}).
+	
+%	\item
+	The virtue of using the det impedance is that its phase is distortion free, regardless of dimensionality of the earth. However, it may be problematic because the effect of site gain and splitting and shear parameters are indistinguishable. All of them can cause the shift in det apparent resistivity.
+	
+%	\item 
+%\end{itemize}
+
+%% ==== ==== Distorted ssq impedance
+\subsection{Distorted ssq impedance}
+
+	Owing to the Frobenius norm definition of the normalizing coefficients, $\NT\NS\NA$, and the Frobenius norm-like definition of ssq impedance, we are interested in examining the ssq impedance under galvanic distortion.
+	As with the previous subsection, we begin deriving the distorted ssq in the generalized form of the distortion operator and then apply Groom--Bailey decomposition.
+	The ssq of the distorted impedance tensor could be obtained by performing straightforward algebra, but here we chose to use the matrix operation.
+
+	Starting from the product of the distorted impedance tensor,
+	\begin{equation}\label{eq:z_distorted_prod}
+		\begin{split}
+			\transpose{{\ZbfDistorted}} \ZbfDistorted & = \transpose{\ZbfUndistorted}\transpose{\Cbf}\Cbf\ZbfUndistorted \\
+			& = \transpose{\ZbfUndistorted}\transpose{(\cZero\SigmaZero+\cOne\SigmaOne + \cTwo\SigmaTwo + \cThree\SigmaThree)} (\cZero\SigmaZero+\cOne\SigmaOne + \cTwo\SigmaTwo + \cThree\SigmaThree)\ZbfUndistorted \\
+			& =  \transpose{\ZbfUndistorted}\left[ \left(\cZero^2+\cOne^2+\cTwo^2+\cThree^2 \right)\SigmaZero + 2\left( \cZero\cThree + \cOne\cTwo \right) \SigmaThree + 2\left( \cZero\cOne - \cTwo\cThree \right)\SigmaOne \right] \ZbfUndistorted
+		\end{split}
+	\end{equation}
+	Calculating trace of Eq. \eqref{eq:z_distorted_prod} to get the ssq of the distorted impedance tensor,
+	\begin{equation}\label{eq:ssq_z_c}
+		\begin{split}
+		\ssq(\ZbfDistorted) & = \tracefunc{\transpose{\ZbfUndistorted}\transpose{\Cbf}\Cbf\ZbfUndistorted} \\
+		& = \left(\cZero^2+\cOne^2+\cTwo^2+\cThree^2 \right) \tracefunc{\transpose{\ZbfUndistorted}\ZbfUndistorted} \\ 
+		& \quad\quad + 2\left( \cZero\cThree + \cOne\cTwo \right) \tracefunc{\transpose{\ZbfUndistorted}\SigmaThree\ZbfUndistorted} \\
+		& \quad\quad + 2\left( \cZero\cOne - \cTwo\cThree \right)\tracefunc{\transpose{\ZbfUndistorted}\SigmaOne\ZbfUndistorted} \\
+		& = \left(\cZero^2+\cOne^2+\cTwo^2+\cThree^2 \right) \ssq(\ZbfUndistorted) \\
+		& \quad\quad + 2\left( \cZero\cThree + \cOne\cTwo \right) ({\ZxxR}^2+{\ZxyR}^2-{\ZyxR}^2-{\ZyyR}^2) \\
+		& \quad\quad + 2\left( \cZero\cOne - \cTwo\cThree \right) \, 2(\ZxxR\ZyxR+\ZxyR\ZyyR)		
+		\end{split}
+	\end{equation}
+	Note that Eq. \eqref{eq:ssq_z_c} is free of $\SigmaTwo$, which defines the twist operator.
+%
+	Substituting the coefficients $c_i$ in Eq. \eqref{eq:alphai_gb} into Eq. \eqref{eq:ssq_z_c} and perfoming modest algebra, we obtain:
+	\begin{equation}\label{eq:ssq_z_distorted_gtes}
+		\begin{split}
+		\ssq(\ZbfDistorted) & = g^2\NT^2\NS^2\NA^2\, (1+\twistp^2) (1+\shearp^2) (1+\splittingp^2)\, \left[\phantom{\frac{1}{2}} \right. \\
+		& \quad\quad \left. \ssq(\ZbfUndistorted)+\frac{2\splittingp}{(1+\splittingp^2)}  ({\ZxxR}^2+{\ZxyR}^2-{\ZyxR}^2-{\ZyyR}^2) \right.\\
+		& \quad\quad \left. + \frac{4\shearp\,(1-\splittingp^2)}{(1+\shearp^2)(1+\splittingp^2)} ({\ZxxR}{\ZyxR}+{\ZxyR}{\ZyyR}) \right] \\
+		& = g^2\left[ \ssq(\ZbfUndistorted)+\frac{2\splittingp}{(1+\splittingp^2)} ({\ZxxR}^2+{\ZxyR}^2-{\ZyxR}^2-{\ZyyR}^2) \right. \\
+		& \quad\quad \left. + \frac{4\shearp\,(1-\splittingp^2)}{(1+\shearp^2)(1+\splittingp^2)} ({\ZxxR}{\ZyxR}+{\ZxyR}{\ZyyR})  \right]
+		\end{split}
+	\end{equation}
+The effect of the distortion parameters on the ssq impedance depends on the dimensionality of the structure. The splitting parameter will be effective if the Earth is not 1D (the 2nd and 3rd terms in Eq. \ref{eq:ssq_z_distorted_gtes}), while the shear parameter becomes effective when the Earth is 3D only (the 3rd term in Eq. \ref{eq:ssq_z_distorted_gtes}).
+	%
+	Note that \citet{gomez-trevino2013a} also obtained the expression similar to Eq. \eqref{eq:ssq_z_distorted_gtes}.
+%	, in which their discussion were limited to the 2D regional structure only.
+	
+	As with the det impedance, the ssq impedance is the rotational invariant and hence independent of the twist parameter.
+	Adopting Eq. \eqref{eq:zssq_def}, for simplicity we write the distorted ssq impedance:
+	\begin{equation}\label{eq:zssq_distorted_gtes}
+		\ZssqDistorted = \gain \ZssqDistortedExGain,
+	\end{equation}
+	where
+	\begin{equation}\label{eq:zssq_distorted_gtes_exgain}
+	\begin{split}
+		\ZssqDistortedExGain & = \frac{1}{\sqrt{2}}\left[ \ssq(\ZbfUndistorted)+\frac{2\splittingp}{(1+\splittingp^2)} ({\ZxxR}^2+{\ZxyR}^2-{\ZyxR}^2-{\ZyyR}^2) \right. \\
+		& \quad\quad \left. + \frac{4\shearp\,(1-\splittingp^2)}{(1+\shearp^2)(1+\splittingp^2)} (\ZxxR\ZyxR+\ZxyR\ZyyR)  \right]^\frac{1}{2}
+	\end{split}
+	\end{equation}
+
+%	\begin{itemize}
+%		\item
+\begin{comment}
+		 The contribution from the MT impedance components in the 2nd and 3rd terms is generally weak, unless the very strong inductive effect, e.g., coastal effect, is recognized or the data is heavily distorted. Consequently, we may assume
+	\begin{equation}
+		\ZssqDistortedExGain \approx \ZssqUndistorted
+	\end{equation}
+%		\item 
+		The virtue of the ssq impedance appears when the Earth is 1D, where the impedance tensor is anti-symmetric (Eq. \ref{eq:z_cond_1d}). 
+		The 2nd and 3rd terms in Eq. \eqref{eq:zssq_distorted_gtes_exgain} then vanish, and the distorted ssq impedance becomes
+		\begin{equation}
+			\ZssqDistorted = \gain \ZssqUndistorted.
+		\end{equation}
+		The observed ssq impedance is only affected by the site gain.
+		In general, the ssq impedance is less biased by the distortion parameters, which is in contrast to the det impedance that is always biased downward by the shear and splitting parameters. 
+		According to these findings, we derive two implications -- estimating the regional 1D impedance and the galvanic distortion-related indicators -- from the det and ssq impedances. 
+
+\end{comment}
+
+%		The benefit of using the ssq impedance in redefining the Berdichevsky average will be demonstrated in the next section.
+%	\end{itemize}
+	
+%	Writing $\Cbf=\gain\Tbf\Sbf\Abf$ as a linear combination of the modified Pauli spin matrices,
+%		\begin{equation}
+%			\begin{split}
+%				\Cbf & = g\Tbf\Sbf\Abf \\
+%					& = g\, \NT(\SigmaZero + \twistp\SigmaTwo)
+%			\end{split}
+%		\end{equation}
+
+%% ==== 
+\section{Redefining the Berdichevsky average}\label{sect:berdichevsky_redefined}
+%\begin{itemize}
+%	\item 
+	Although using the ssq impedance may reduce the bias due to the splitting and shear parameters, the site gain $\gain$ remains the problem. 
+	In this section, we will show that the average approach is one strategy to relieve the problem of site gain.
+	Also, to show the difference between using the average det impedance and the average ssq impedance, we reexamine the Berdichevsky average within the Groom--Bailey framework, and redefine the Berdichevsky average with the ssq impedance.	
+
+%	\item
+	Given that $N$ MT observations were made, we rewrite the Berdichevsky average (Eq. \ref{eq:berdichevsky_avg_def}) as the geometric average of impedances, 
+		\begin{equation}\label{eq:zdet_mean}
+				\ZdetDistortedMean\fxomega = \left[ \prod\limits_{i=1}^{N}\, \ZdetDistorted\fxriomega\,\right ]^\frac{1}{N},
+		\end{equation}
+		where $\rbf_i$ denotes the position vector of the $i$th observation. 
+	Substituting the distorted det impedance Eq. \eqref{eq:zdet_distorted_gb} into Eq. \eqref{eq:zdet_mean},
+	\begin{equation}
+		\ZdetDistortedMean\fxomega = \left[ \prod\limits_{i=1}^{N}\, \gainpi\,\sqrt{\frac{1-\shearpi^2}{1+\shearpi^2} \frac{1-\splittingpi^2}{1+\splittingpi^2}}\, \ZdetUndistorted\fxriomega\right ]^\frac{1}{N},
+	\end{equation}
+	where $\gainpi$, $\shearpi$ and $\splittingpi$ are the site gain, shear and splitting parameters at the $i$th station.
+	On the basis of the central limit theorem and assuming that the site gain is log-normally distributed \citep{berdichevsky1980a}, the arithmetic average of site gains from a number of observations in a logarithmic scale is approximately zero \citep[see also][]{degroot-hedlin1991a, ogawa1996a}. In other words, the geometric average of site gains becomes unity:
+	\begin{equation}
+		 \prod\limits_{i=1}^{N}\, g_i  \rightarrow 1.
+	\end{equation}
+	Approximately, the average det impedance then becomes
+	\begin{equation} \label{eq:zdet_mean_apprx}
+	\begin{split}
+		\ZdetDistortedMean\fxomega & \approx \left[ \prod\limits_{i=1}^{N}\, \sqrt{\frac{1-\shearpi^2}{1+\shearpi^2} \frac{1-\splittingpi^2}{1+\splittingpi^2}}\, \ZdetUndistorted\fxriomega\right ]^\frac{1}{N} \\
+		& \approx \left[ \prod\limits_{i=1}^{N}\, \sqrt{\frac{1-\shearpi^2}{1+\shearpi^2} \frac{1-\splittingpi^2}{1+\splittingpi^2}} \right]^\frac{1}{N} \ZdetUndistortedMean\fxomega,
+	\end{split}
+	\end{equation}
+	where the average regional det impedance 
+	\begin{equation}
+		\ZdetUndistortedMean\fxomega = \left[ \prod\limits_{i=1}^{N}  \ZdetUndistorted\fxriomega \right]^\frac{1}{N}.
+	\end{equation}
+	Averaging the impedance and applying the central limit theorem would help relieve the problem of site gain.
+	However, the remaining coefficient of splitting and shear parameters, which is always less than unity, will underestimate the regional det impedance in terms of apparent resistivity. 
+	In other words, the Berdichevsky average may lead to an overestimated model of the regional mean 1D conductivity profile. 
+	%
+	However, \citet{baba2010a} successfully applied the Berdichevsky average to marine MT data after showing that the galvanic distortion is negligible.
+%	\item One benefit from averaging the impedance is that the problem of site gain is relieved.
+%	\item This statistical characteristic of Berdichevsky average urged us to seek for another candidate that can reliably estimate the regional impedance.
+%	\item As seen in Section \ref{sect:XXX}, the ssq impedance is less biased by galvanic distortion.
+	
+%	\item
+	 Next, we redefine the Berdichevsky average with the ssq impedance. As the ssq impedance is less sensitive to the distortion parameters, the average ssq impedance is expected to yield the reliable estimate of the regional mean 1D conductivity profile. Writing the average ssq impedance as 
+	\begin{equation}\label{eq:zssq_mean}
+				\ZssqDistortedMean\fxomega = \left[ \prod\limits_{i=1}^{N}\, \ZssqDistorted\fxriomega\,\right ]^\frac{1}{N}.
+	\end{equation}
+	and substituting the distorted ssq impedance (Eq. \ref{eq:zssq_distorted_gtes}) into Eq. \eqref{eq:zssq_mean} gives 
+	\begin{equation}\label{eq:zssq_mean_sub}
+		\ZssqDistortedMean\fxomega = \left[ \prod\limits_{i=1}^{N}\, \gainpi\, \ZssqDistortedExGain\fxriomega\right ]^\frac{1}{N}.
+	\end{equation}
+%\end{itemize}
+
+As with Eq. \eqref{eq:zdet_mean_apprx}, the central limit theorem is applied in averging site gain. 
+If we average the impedance from a large number of observations covering an sufficiently large area, we may assume the effect of the 2nd and 3rd terms in Eq. \eqref{eq:zssq_distorted_gtes_exgain} becomes negligible. The average ssq impedance (Eq. \ref{eq:zssq_mean_sub}) becomes
+\begin{equation}\label{eq:zssq_mean_apprx}
+		\ZssqDistortedMean\fxomega \approx \ZssqUndistortedMean\fxomega,
+\end{equation}
+	where the average regional ssq impedance 
+	\begin{equation}
+		\ZssqUndistortedMean\fxomega = \left[ \prod\limits_{i=1}^{N}  \ZssqUndistorted\fxriomega \right]^\frac{1}{N}.
+	\end{equation}
+	Therefore, the average ssq impedance would give the good estimate of the regional mean 1D conductivity profile.
+
+%In 1D situation, 
+%\begin{equation}
+%	\Zssq = \Zdet = \ZOneD,
+%\end{equation}
+%where $\ZOneD$ is the regional 1D impedance.
+
+
+
+\section{Indicating the galvanic distortion}\label{sect:indicators}
+
+In addition to estimating the regional mean conductvity profile, the combination of the det and ssq impedances would help determine the existence and strength of galvanic distortion contained in an MT dataset. 
+
+\subsection{Local and regional distortion indicators}
+Employing the fact that the effect of galvanic distortion on the det and ssq impedances are different, 
+the local distortion indicator is defined as the squared ratio of the det impedance to the ssq impedance
+\begin{equation}\label{eq:gamma_local_def}
+	\gammai\fxomega = \frac{\ZssqDistorted\fxriomega^2}{\ZdetDistorted\fxriomega^2}.
+\end{equation}
+Applying the expressions for $\ZssqDistorted$ and $\ZdetDistorted$ in Eqs. \eqref{eq:zdet_distorted_gb} and \eqref{eq:zssq_distorted_gtes}, we obtain 
+\begin{equation}
+ 	\gammai\fxomega = \frac{\gainpi^2\, \ZssqDistortedExGain\fxriomega^2}{\displaystyle \gainpi^2\,  \frac{1-\shearpi^2}{1+\shearpi^2} \frac{1-\splittingpi^2}{1+\splittingpi^2}\, \ZdetUndistorted\fxriomega^2}. 
+\end{equation}
+The presence of galvanic distortion can be examined by the consistency between the vertical magnetic transfer function and the lateral gradients of MT impedance \citep{utada2000a, rung-arunwan2016a}. The importance of the local distortion indicator exists in the separation of the site gain.
+%As defined in this way, the local distortion indicator is intrinsically independent of site gain. 
+
+In general cases, we may approximate the local distortion indicator as:
+\begin{equation}\label{eq:gamma_approx}
+	\gammai\fxomega \approx \frac{1+\shearpi^2}{1-\shearpi^2} \frac{1+\splittingpi^2}{1-\splittingpi^2}\, \frac{\ZssqUndistorted\fxriomega^2}{\ZdetUndistorted\fxriomega^2} \approx \frac{1+\shearpi^2}{1-\shearpi^2} \frac{1+\splittingpi^2}{1-\splittingpi^2}.
+\end{equation}
+The local distortion indicator is expressed as the product of the coefficient of distortion parameters and the difference between the ssq and det impedances.
+The former is real-valued and frequency independent, and larger than unity if the data is distorted, while the latter is generally complex-valued and frequency-dependent. The difference between the det and ssq impedances is generally small; consequently, it may be ignored.
+In an 1D situation, the local distortion indicator becomes
+\begin{equation}\label{eq:gamma_1d_analytic}
+	\gammai = \frac{1+\shearpi^2}{1-\shearpi^2} \frac{1+\splittingpi^2}{1-\splittingpi^2}.
+\end{equation}
+This ratio is the real-valued number indicating the strength of shear and splitting parameters. The stronger the galvanic distortion, the greater the local distortion indicator.
+But if there is no distortion, the local distortion indicator becomes unity in the 1D situation.
+
+In general, if the local distortion indicator was found to be real-valued and weakly frequency independent, the 1D regional structure may be assumed. The magnitude of the local distortion indicator denotes the strength of galvanic distortion posed in the data. 
+%
+If the local distortion indicator is varied (frequency dependent) about some constant magnitude, the distorted 3D data is suggested. 
+
+%% ==== Mean local distortion indicator
+	Further, we also define the mean local distortion indicator $\gammaimean$ by averaging the local distortion indicator over the given period range so as to relieve the frequency dependent part, which is mainly due to the underlying structure. 
+%
+Given that at the $i$th stations the number of periods is $M$, the mean local distortion indicator is given by averaging the real part of the local distortion indicator:
+\begin{equation}\label{eq:gamma_local_mean_def}
+	\gammaimean = \left[\prod\limits_{j=1}^{M} \Re\,\gammai(\omega_j) \right]^\frac{1}{M}.
+\end{equation}
+%
+Only the real part is used in order to conform with the assumption that the galvanic distortion operator is real. 
+This single-valued parameter is able to represent the galvanic distortion strength at an MT station and also ease analysing data from a number of MT stations. 
+
+%% ==== ==== ==== ==== Regional distortion indicator
+In addition to the local distortion indicator (Eq. \ref{eq:gamma_local_def}), we can determine how strongly the dataset is distorted using the regional distortion indicator, which is defined as the geometric mean of the local distortion indicators:
+\begin{equation}\label{eq:gamma_regional_def}
+	\gammaR\fxomega = \left[ \prod\limits_{i=1}^N \gammai\fxomega \right]^\frac{1}{N}  
+\end{equation}
+Substituting the approximation in Eq. \eqref{eq:zdet_mean_apprx} into Eq. \eqref{eq:zssq_mean_apprx}, we get 
+\begin{equation}
+\begin{split}
+	\gammaR\fxomega & \approx \left[ \prod\limits_{i=1}^N \frac{1+\shearpi^2}{1-\shearpi^2} \frac{1+\splittingpi^2}{1-\splittingpi^2}\,  \right]^\frac{1}{N}  \frac{\ZssqUndistortedMean\fxriomega^2}{\ZdetUndistortedMean\fxriomega^2} \\
+	& \approx \left[ \prod\limits_{i=1}^N \frac{1+\shearpi^2}{1-\shearpi^2} \frac{1+\splittingpi^2}{1-\splittingpi^2} \right]^\frac{1}{N}.
+\end{split}
+\end{equation}
+
+%% ==== Paragraph about the regional distortion indicators
+%\redb{Regional distortion indicator}
+
+%\begin{itemize}
+%	\item 
+	By averaging the local distortion indicators, the contribution of the difference between the ssq and det impedances is diminished.
+%	\item 
+	The regional distortion indicator is expected to be real and frequency independent, and its magnitude represents the effect of the shear and splitting parameters on average. 
+	As with the local distortion indicator, the larger the magnitude of the regional distortion indicator, the stronger the galvanic distortion.
+%	\item 
+	In some areas, if the near-surface layer is highly heterogenous, strong galvanic distortion is expected and the regional distortion indicator would help quantify its strength.
+	If the MT dataset is strongly distorted, the proper treatment or removal of galvanic distortion may be necessary.
+%\end{itemize}
+
+
+
+\subsection{Apparent gains}
+In addition to determining the strength of the shear and splitting parameters, the apparent gain was introduced to determine the magnitude of site gain, which generally claimed to be undeterminable without other independent information \citep{groom1993a, bibby2005a}.  
+%
+Here we show that estimating the site gain is plausible from a set of MT data.
+
+%The static shift removal based on other data
+%\citep[e.g.,][]{jones1988a, sternberg1988a}
+
+As the averaging approach and assuming the central limit theorem relieves the problem of site gain, the apparent gains could be defined from the ratio of individual invariant impedance to the average impedance.
+As two rotational invariants are of interest, we then examine two apparent gains, 
+the apparent det and ssq gains: 
+\begin{equation}\label{eq:gdet_def}
+	\gdeti\fxomega = \frac{\ZdetDistorted\fxriomega}{\ZdetDistortedMean\fxomega}
+\end{equation}
+and
+\begin{equation}\label{eq:gssq_def}
+	\gssqi\fxomega = \frac{\ZssqDistorted\fxriomega}{\ZssqDistortedMean\fxomega}.
+\end{equation}
+
+%% ==== 1-D and general
+In the 1D Earth, we will have
+\begin{equation}
+	\gdeti = \gainpi \sqrt{\frac{1-\shearpi^2}{1+\shearpi^2}\frac{1-\splittingpi^2}{1+\splittingpi^2}} \bigg/ \left[ \prod\limits_{i=1}^{N}\, \sqrt{\frac{1-\shearpi^2}{1+\shearpi^2} \frac{1-\splittingpi^2}{1+\splittingpi^2}} \right]^\frac{1}{N} 
+\end{equation}
+and
+\begin{equation}
+	\gssqi = \gainpi 
+\end{equation}
+If the apparent det and ssq gains are real and almost frequency independent, we may assume the earth is likely 1D. The magnitude of the apparent ssq gain would give a good estimate of the actual site gain.
+
+In general, the apparent det gain is obtained by substituting the expressions for $\ZdetDistorted$ and $\ZdetDistortedMean$  (Eqs. \ref{eq:zdet_distorted_gb} and \ref{eq:zdet_mean_apprx}) into Eq. \eqref{eq:gdet_def}:
+\begin{equation}
+\begin{split}
+	\gdeti\fxomega 
+	& \approx \gainpi \sqrt{\frac{1-\shearpi^2}{1+\shearpi^2}\frac{1-\splittingpi^2}{1+\splittingpi^2}}\,  \ZdetUndistorted \fxriomega \bigg/ \left[ \prod\limits_{i=1}^{N}\, \sqrt{\frac{1-\shearpi^2}{1+\shearpi^2} \frac{1-\splittingpi^2}{1+\splittingpi^2}} \right]^\frac{1}{N}\, \ZdetUndistortedMean\fxomega\\
+	 & \approx \gainpi \sqrt{\frac{1-\shearpi^2}{1+\shearpi^2}\frac{1-\splittingpi^2}{1+\splittingpi^2}} \bigg/ \left[ \prod\limits_{i=1}^{N}\, \sqrt{\frac{1-\shearpi^2}{1+\shearpi^2} \frac{1-\splittingpi^2}{1+\splittingpi^2}} \right]^\frac{1}{N}.
+\end{split}
+\end{equation}
+The apparent ssq gain is obtained by substituting the expressions for $\ZssqDistorted$ and $\ZssqDistortedMean$  (Eqs. \ref{eq:zssq_distorted_gtes} and \ref{eq:zssq_mean_apprx}) into Eq. \eqref{eq:gssq_def}:
+\begin{equation}
+\begin{split}
+	\gssqi\fxomega & \approx \gainpi \ZssqDistortedExGain\fxriomega \bigg/  \ZssqUndistortedMean\fxomega \\
+		& \approx \gainpi \\
+\end{split}
+\end{equation}
+%\redb{check the approximation again!}
+
+Whether the Earth is 1D or not, the shear and splitting parameters systematically affect the apparent det gain. If the distortion at the individual station is stronger than the average, the apparent det gain will underestimate the actual site gain. 
+%
+Therefore the apparent det gain is either an overestimate or an underestimate.
+
+
+To estimate the site gain for each station, we propose to calculate the mean apparent det and ssq gains $\gdetimean$ and $\gssqimean$ by averaging the real part of the apparent gains over the period range of interest.
+Given that at each stations the number of periods is $M$, the mean apparent gains are:
+\begin{equation}\label{eq:gdet_mean_def}
+	\gdetimean = \left[\prod\limits_{j=1}^{M} \Re\,\gdeti(\omega_j) \right]^\frac{1}{M}
+\end{equation}
+and
+\begin{equation}\label{eq:gssq_mean_def}
+	\gssqimean = \left[\prod\limits_{j=1}^{M} \Re\,\gssqi(\omega_j) \right]^\frac{1}{M}
+\end{equation}
+%The aim of averaging the apparent gains is to flatten out frequency dependent part due to the 3D effect contained in the data.
+Averaging would help flatten the frequency dependent features due to the underlying heterogeneity.
+The mean apparent ssq gain are expected to be a good estimate of the site gain.
+
+
